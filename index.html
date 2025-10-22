@@ -8,7 +8,7 @@
 </head>
 <body class="bg-[#FBF8EC]">
     <header class="fixed top-0 left-0 w-full bg-[#FFFFFF] shadow-lg z-50">
-        <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between p-4 gap-5 sm:gap-0">
 
             <div class="flex items-center gap-3">
                 <img src="./images/logo.png" alt="Logo">
@@ -48,40 +48,40 @@
     </header>
 
 
-    <section class="mt-20">
-        <img src="./images/home-banner.png" alt="Home-banner" class="w-full">
+    <section class="mt-20 overflow-hidden">
+        <img src="./images/home-banner.png" alt="Home-banner" class="w-full h-[60px] sm:h-[80px] md:h-[200px] object-cover">
     </section>
 
     <section class="max-w-7xl mx-auto my-10 px-4">
         <div class="flex items-center justify-between mb-6">
-        <h2 class="text-4xl font-bold text-[#414141] mb-6">Акции</h2>
-        <a href="#" class="text-md text-gray-700 hover:text-gray-900 transition duration-500">Все продукты ></a>
+        <h2 class="text-2xl sm:text-4xl font-bold text-[#414141] my-6">Акции</h2>
+        <a href="#" class="text-sm sm:text-md text-gray-700 hover:text-gray-900 transition duration-500">Все продукты ></a>
         </div>
 
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="group bg-white rounded-xl shadow transition p-4 relative hover:shadow-lg hover:scale-105 hover:shadow-lg duration-500">
+        <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="group bg-white rounded-xl shadow transition p-2 sm:p-4 relative hover:shadow-lg hover:scale-105 hover:shadow-lg duration-500 flex flex-col">
                 <button class="group-hover:block absolute top-3 right-3 z-10 opacity-0 group-hover:opacity-100 transition duration-500">
                     <img src="./images/fav.png" alt="Favourite" class="w-6 h-6 transition">
                 </button>
 
                 <div class="relative mb-4">
-                    <img src="./images/h-d-product-1.png" alt="Home discounts product 1" class="w-full h-40 object-cover rounded-lg mb-4">
-                    <span class="w-[56px] h-[32px] absolute bottom-1 left-1 bg-[#FF6633] text-white text-md font-semibold px-2 py-1 rounded">-50%</span>
+                    <img src="./images/h-d-product-1.png" alt="Home discounts product 1" class="w-full h-28 sm:h-40 object-cover rounded-lg my-4">
+                    <span class="w-[40px] sm:w-[56px] h-[26px] sm:h-[32px] absolute bottom-1 left-1 bg-[#FF6633] text-white text-[12px] sm:text-md font-semibold px-2 py-1 rounded">-50%</span>
                 </div>
 
                 <div class="mb-2">
                     <div class="flex justify-between items-baseline gap-2">
-                        <span class="text-xl font-bold text-[#414141]">₽44,50</span>
-                        <span class="text-lg text-[#606060]">₽50,50</span>
+                        <span class="text-md sm:text-xl font-bold text-[#414141]">₽44,50</span>
+                        <span class="text-sm sm:text-lg text-[#606060]">₽50,50</span>
                     </div>
-                    <div class="flex justify-between text-[12px] text-gray-400 mt-1">
+                    <div class="flex justify-between text-[10px] sm:text-[12px] text-gray-400 mt-1">
                         <p>С картой</p>
                         <p>Обычная</p>
                     </div>
                 </div>
 
-                <h3 class="text-[16px] font-semibold text-[#414141] mt-3">Г/Ц Блинчики с мясом вес, <br> Россия</h3>
+                <h3 class="text-sm sm:text-[16px] font-semibold text-[#414141] mt-3">Г/Ц Блинчики с мясом вес, <br> Россия</h3>
 
                 <div class="flex items-center mt-2 space-x-2">
                     <img src="./images/Star-orange.png" alt="Rating star">
@@ -91,31 +91,31 @@
                     <img src="./images/Star-gray.png" alt="Rating star1">
                 </div>
 
-                <button class="mt-3 w-full bg-[#FFFFFF] rounded border border-[#70C05B] text-[#70C05B] group-hover:bg-[#FF6633] group-hover:border-none group-hover:text-[#FFFFFF] transition duration-500 py-1">В корзину</button>
+                <button class="mt-auto w-full bg-[#FFFFFF] rounded border border-[#70C05B] text-[#70C05B] group-hover:bg-[#FF6633] group-hover:border-none group-hover:text-[#FFFFFF] transition duration-500 py-1">В корзину</button>
             </div>
 
-            <div class="group bg-white rounded-xl shadow transition p-4 relative hover:shadow-lg hover:scale-105 hover:shadow-lg duration-500">
+            <div class="group bg-white rounded-xl shadow transition p-2 sm:p-4 relative hover:shadow-lg hover:scale-105 hover:shadow-lg duration-500">
                 <button class="group-hover:block absolute top-3 right-3 z-10 opacity-0 group-hover:opacity-100 transition duration-500">
                     <img src="./images/fav.png" alt="Favourite" class="w-6 h-6 transition">
                 </button>
 
                 <div class="relative mb-4">
-                    <img src="./images/h-d-product-2.png" alt="Home discounts product 1" class="w-full h-40 object-cover rounded-lg mb-4">
-                    <span class="w-[56px] h-[32px] absolute bottom-1 left-1 bg-[#FF6633] text-white text-md font-semibold px-2 py-1 rounded">-50%</span>
+                    <img src="./images/h-d-product-2.png" alt="Home discounts product 1" class="w-full h-28 sm:h-40 object-cover rounded-lg my-4">
+                    <span class="w-[40px] sm:w-[56px] h-[26px] sm:h-[32px] absolute bottom-1 left-1 bg-[#FF6633] text-white text-[12px] sm:text-md font-semibold px-2 py-1 rounded">-50%</span>
                 </div>
 
                 <div class="mb-2">
                     <div class="flex justify-between items-baseline gap-2">
-                        <span class="text-xl font-bold text-[#414141]">₽44,50</span>
-                        <span class="text-lg text-[#606060]">₽50,50</span>
+                        <span class="text-md sm:text-xl font-bold text-[#414141]">₽44,50</span>
+                        <span class="text-sm sm:text-lg text-[#606060]">₽50,50</span>
                     </div>
-                    <div class="flex justify-between text-[12px] text-gray-400 mt-1">
+                    <div class="flex justify-between text-[10px] sm:text-[12px] text-gray-400 mt-1">
                         <p>С картой</p>
                         <p>Обычная</p>
                     </div>
                 </div>
 
-                <h3 class="text-[16px] font-semibold text-[#414141] mt-3">Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...</h3>
+                <h3 class="text-sm sm:text-[16px] font-semibold text-[#414141] mt-3">Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...</h3>
 
                 <div class="flex items-center mt-2 space-x-2">
                     <img src="./images/Star-orange.png" alt="Rating star">
@@ -128,28 +128,28 @@
                 <button class="mt-3 w-full bg-[#FFFFFF] rounded border border-[#70C05B] text-[#70C05B] group-hover:bg-[#FF6633] group-hover:border-none group-hover:text-[#FFFFFF] transition duration-500 py-1">В корзину</button>
             </div>
 
-            <div class="group bg-white rounded-xl shadow transition p-4 relative hover:shadow-lg hover:scale-105 hover:shadow-lg duration-500">
+            <div class="group bg-white rounded-xl shadow transition p-2 sm:p-4 relative hover:shadow-lg hover:scale-105 hover:shadow-lg duration-500">
                 <button class="group-hover:block absolute top-3 right-3 z-10 opacity-0 group-hover:opacity-100 transition duration-500">
                     <img src="./images/fav.png" alt="Favourite" class="w-6 h-6 transition">
                 </button>
 
                 <div class="relative mb-4">
-                    <img src="./images/h-d-product-3.png" alt="Home discounts product 1" class="w-full h-40 object-cover rounded-lg mb-4">
-                    <span class="w-[56px] h-[32px] absolute bottom-1 left-1 bg-[#FF6633] text-white text-md font-semibold px-2 py-1 rounded">-50%</span>
+                    <img src="./images/h-d-product-3.png" alt="Home discounts product 1" class="w-full h-28 sm:h-40 object-cover rounded-lg my-4">
+                    <span class="w-[40px] sm:w-[56px] h-[26px] sm:h-[32px] absolute bottom-1 left-1 bg-[#FF6633] text-white text-[12px] sm:text-md font-semibold px-2 py-1 rounded">-50%</span>
                 </div>
 
                 <div class="mb-2">
                     <div class="flex justify-between items-baseline gap-2">
-                        <span class="text-xl font-bold text-[#414141]">₽44,50</span>
-                        <span class="text-lg text-[#606060]">₽50,50</span>
+                        <span class="text-md sm:text-xl font-bold text-[#414141]">₽44,50</span>
+                        <span class="text-sm sm:text-lg text-[#606060]">₽50,50</span>
                     </div>
-                    <div class="flex justify-between text-[12px] text-gray-400 mt-1">
+                    <div class="flex justify-between text-[10px] sm:text-[12px] text-gray-400 mt-1">
                         <p>С картой</p>
                         <p>Обычная</p>
                     </div>
                 </div>
 
-                <h3 class="text-[16px] font-semibold text-[#414141] mt-3">Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...</h3>
+                <h3 class="text-sm sm:text-[16px] font-semibold text-[#414141] mt-3">Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...</h3>
 
                 <div class="flex items-center mt-2 space-x-2">
                     <img src="./images/Star-orange.png" alt="Rating star">
@@ -162,148 +162,34 @@
                 <button class="mt-3 w-full bg-[#FFFFFF] rounded border border-[#70C05B] text-[#70C05B] group-hover:bg-[#FF6633] group-hover:border-none group-hover:text-[#FFFFFF] transition duration-500 py-1">В корзину</button>
             </div>
 
-            <div class="group bg-white rounded-xl shadow transition p-4 relative hover:shadow-lg hover:scale-105 hover:shadow-lg duration-500">
+            <div class="group bg-white rounded-xl shadow transition p-2 sm:p-4 relative hover:shadow-lg hover:scale-105 hover:shadow-lg duration-500">
                 <button class="group-hover:block absolute top-3 right-3 z-10 opacity-0 group-hover:opacity-100 transition duration-500">
                     <img src="./images/fav.png" alt="Favourite" class="w-6 h-6 transition">
                 </button>
 
                 <div class="relative mb-4">
-                    <img src="./images/h-d-product-4.png" alt="Home discounts product 1" class="w-full h-40 object-cover rounded-lg mb-4">
-                    <span class="w-[56px] h-[32px] absolute bottom-1 left-1 bg-[#FF6633] text-white text-md font-semibold px-2 py-1 rounded">-50%</span>
+                    <img src="./images/h-d-product-4.png" alt="Home discounts product 1" class="w-full h-28 sm:h-40 object-cover rounded-lg my-4">
+                    <span class="w-[40px] sm:w-[56px] h-[26px] sm:h-[32px] absolute bottom-1 left-1 bg-[#FF6633] text-white text-[12px] sm:text-md font-semibold px-2 py-1 rounded">-50%</span>
                 </div>
 
                 <div class="mb-2">
                     <div class="flex justify-between items-baseline gap-2">
-                        <span class="text-xl font-bold text-[#414141]">₽44,50</span>
-                        <span class="text-lg text-[#606060]">₽50,50</span>
+                        <span class="text-md sm:text-xl font-bold text-[#414141]">₽44,50</span>
+                        <span class="text-sm sm:text-lg text-[#606060]">₽50,50</span>
                     </div>
-                    <div class="flex justify-between text-[12px] text-gray-400 mt-1">
+                    <div class="flex justify-between text-[10px] sm:text-[12px] text-gray-400 mt-1">
                         <p>С картой</p>
                         <p>Обычная</p>
                     </div>
                 </div>
 
-                <h3 class="text-[16px] font-semibold text-[#414141] mt-3">Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...</h3>
+                <h3 class="text-sm sm:text-[16px] font-semibold text-[#414141] mt-3">Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...</h3>
 
                 <div class="flex items-center mt-2 space-x-2">
                     <img src="./images/Star-orange.png" alt="Rating star">
                     <img src="./images/Star-orange.png" alt="Rating star">
                     <img src="./images/Star-orange.png" alt="Rating star1">
                     <img src="./images/Star-orange.png" alt="Rating star1">
-                    <img src="./images/Star-gray.png" alt="Rating star1">
-                </div>
-
-                <button class="mt-3 w-full bg-[#FFFFFF] rounded border border-[#70C05B] text-[#70C05B] group-hover:bg-[#FF6633] group-hover:border-none group-hover:text-[#FFFFFF] transition duration-500 py-1">В корзину</button>
-            </div>
-        </div>
-    </section>
-
-    <section class="max-w-7xl mx-auto my-10 px-4">
-        <div class="flex items-center justify-between mb-6">
-        <h2 class="text-4xl font-bold text-[#414141] mb-6">Новинки</h2>
-        <a href="#" class="text-md text-gray-700 hover:text-gray-900 transition duration-500">Все продукты ></a>
-        </div>
-
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="group bg-white rounded-xl shadow transition p-4 relative hover:shadow-lg hover:scale-105 hover:shadow-lg duration-500">
-                <button class="group-hover:block absolute top-3 right-3 z-10 opacity-0 group-hover:opacity-100 transition duration-500">
-                    <img src="./images/fav.png" alt="Favourite" class="w-6 h-6 transition">
-                </button>
-
-                <div class="relative mb-4">
-                    <img src="./images/h-n-product-1.png" alt="Home discounts product 1" class="w-full h-40 object-cover rounded-lg mb-4">
-                </div>
-
-                <div class="mb-5">
-                        <span class="text-lg font-bold text-[#414141]">599,99 ₽</span>
-                </div>
-
-                <h3 class="text-[16px] font-semibold text-[#414141] mb-3">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h3>
-
-                <div class="flex items-center mt-2 space-x-2">
-                    <img src="./images/Star-orange.png" alt="Rating star">
-                    <img src="./images/Star-orange.png" alt="Rating star">
-                    <img src="./images/Star-gray.png" alt="Rating star1">
-                    <img src="./images/Star-gray.png" alt="Rating star1">
-                    <img src="./images/Star-gray.png" alt="Rating star1">
-                </div>
-
-                <button class="mt-3 w-full bg-[#FFFFFF] rounded border border-[#70C05B] text-[#70C05B] group-hover:bg-[#FF6633] group-hover:border-none group-hover:text-[#FFFFFF] transition duration-500 py-1">В корзину</button>
-            </div>
-
-            <div class="group bg-white rounded-xl shadow transition p-4 relative hover:shadow-lg hover:scale-105 hover:shadow-lg duration-500">
-                <button class="group-hover:block absolute top-3 right-3 z-10 opacity-0 group-hover:opacity-100 transition duration-500">
-                    <img src="./images/fav.png" alt="Favourite" class="w-6 h-6 transition">
-                </button>
-
-                <div class="relative mb-4">
-                    <img src="./images/h-d-product-3.png" alt="Home discounts product 1" class="w-full h-40 object-cover rounded-lg mb-4">
-                </div>
-
-                <div class="mb-5">
-                    <span class="text-lg font-bold text-[#414141]">44,50 ₽</span>
-                </div>
-
-                <h3 class="text-[16px] font-semibold text-[#414141] mb-3">Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...</h3>
-
-                <div class="flex items-center mt-2 space-x-2">
-                    <img src="./images/Star-orange.png" alt="Rating star">
-                    <img src="./images/Star-orange.png" alt="Rating star">
-                    <img src="./images/Star-orange.png" alt="Rating star1">
-                    <img src="./images/Star-orange.png" alt="Rating star1">
-                    <img src="./images/Star-orange.png" alt="Rating star1">
-                </div>
-
-                <button class="mt-3 w-full bg-[#FFFFFF] rounded border border-[#70C05B] text-[#70C05B] group-hover:bg-[#FF6633] group-hover:border-none group-hover:text-[#FFFFFF] transition duration-500 py-1">В корзину</button>
-            </div>
-
-            <div class="group bg-white rounded-xl shadow transition p-4 relative hover:shadow-lg hover:scale-105 hover:shadow-lg duration-500">
-                <button class="group-hover:block absolute top-3 right-3 z-10 opacity-0 group-hover:opacity-100 transition duration-500">
-                    <img src="./images/fav.png" alt="Favourite" class="w-6 h-6 transition">
-                </button>
-
-                <div class="relative mb-4">
-                    <img src="./images/h-d-product-4.png" alt="Home discounts product 1" class="w-full h-40 object-cover rounded-lg mb-4">
-                </div>
-
-                <div class="mb-5">
-                    <span class="text-lg font-bold text-[#414141]">159,99 ₽</span>
-                </div>
-
-                <h3 class="text-[16px] font-semibold text-[#414141] mb-3">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h3>
-
-                <div class="flex items-center mt-2 space-x-2">
-                    <img src="./images/Star-orange.png" alt="Rating star">
-                    <img src="./images/Star-orange.png" alt="Rating star">
-                    <img src="./images/Star-gray.png" alt="Rating star1">
-                    <img src="./images/Star-gray.png" alt="Rating star1">
-                    <img src="./images/Star-gray.png" alt="Rating star1">
-                </div>
-
-                <button class="mt-3 w-full bg-[#FFFFFF] rounded border border-[#70C05B] text-[#70C05B] group-hover:bg-[#FF6633] group-hover:border-none group-hover:text-[#FFFFFF] transition duration-500 py-1">В корзину</button>
-            </div>
-
-            <div class="group bg-white rounded-xl shadow transition p-4 relative hover:shadow-lg hover:scale-105 hover:shadow-lg duration-500">
-                <button class="group-hover:block absolute top-3 right-3 z-10 opacity-0 group-hover:opacity-100 transition duration-500">
-                    <img src="./images/fav.png" alt="Favourite" class="w-6 h-6 transition">
-                </button>
-
-                <div class="relative mb-4">
-                    <img src="./images/h-d-product-2.png" alt="Home discounts product 1" class="w-full h-40 object-cover rounded-lg mb-4">
-                </div>
-
-                <div class="mb-5">
-                        <span class="text-lg font-bold text-[#414141]">49,39 ₽</span>
-                </div>
-
-                <h3 class="text-[16px] font-semibold text-[#414141] mt-3">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h3>
-
-                <div class="flex items-center mt-2 space-x-2">
-                    <img src="./images/Star-orange.png" alt="Rating star">
-                    <img src="./images/Star-orange.png" alt="Rating star">
-                    <img src="./images/Star-gray.png" alt="Rating star1">
-                    <img src="./images/Star-gray.png" alt="Rating star1">
                     <img src="./images/Star-gray.png" alt="Rating star1">
                 </div>
 
@@ -313,27 +199,79 @@
     </section>
 
     <section class="max-w-7xl mx-auto my-10 px-4">
-        <div class="flex items-center justify-between mb-6">
-        <h2 class="text-4xl font-bold text-[#414141] mb-6">Покупали раньше</h2>
-        <a href="#" class="text-md text-gray-700 hover:text-gray-900 transition duration-500">Все продукты ></a>
+        <div class="flex items-center justify-between mb-10">
+        <h2 class="text-2xl sm:text-4xl font-bold text-[#414141]">Новинки</h2>
+        <a href="#" class="text-sm sm:text-md text-gray-700 hover:text-gray-900 transition duration-500">Все продукты ></a>
         </div>
 
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="group bg-white rounded-xl shadow transition p-4 relative hover:shadow-lg hover:scale-105 hover:shadow-lg duration-500">
+        <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="group bg-white rounded-xl shadow transition p-2 sm:p-4 relative hover:shadow-lg hover:scale-105 duration-500 flex flex-col justify-between h-full">
                 <button class="group-hover:block absolute top-3 right-3 z-10 opacity-0 group-hover:opacity-100 transition duration-500">
                     <img src="./images/fav.png" alt="Favourite" class="w-6 h-6 transition">
                 </button>
 
                 <div class="relative mb-4">
-                    <img src="./images/h-p-product-1.png" alt="Home discounts product 1" class="w-full h-40 object-cover rounded-lg mb-4">
+                    <img src="./images/h-n-product-1.png" alt="Home discounts product 1" class="w-full h-24 sm:h-40 object-cover rounded-lg my-4">
                 </div>
 
                 <div class="mb-5">
-                    <span class="text-lg font-bold text-[#414141]">77,99 ₽</span>
+                    <span class="text-md sm:text-xl font-bold text-[#414141]">599,99 ₽</span>
                 </div>
 
-                <h3 class="text-[16px] font-semibold text-[#414141] mb-3">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h3>
+                <h3 class="text-sm sm:text-[16px] font-semibold text-[#414141] mt-3">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h3>
+
+                <div class="flex items-center mt-2 space-x-2 mt-auto">
+                    <img src="./images/Star-orange.png" alt="Rating star">
+                    <img src="./images/Star-orange.png" alt="Rating star">
+                    <img src="./images/Star-gray.png" alt="Rating star1">
+                    <img src="./images/Star-gray.png" alt="Rating star1">
+                    <img src="./images/Star-gray.png" alt="Rating star1">
+                </div>
+
+                <button class="mt-auto w-full bg-[#FFFFFF] rounded border border-[#70C05B] text-[#70C05B] group-hover:bg-[#FF6633] group-hover:border-none group-hover:text-[#FFFFFF] transition duration-500 py-1">В корзину</button>
+            </div>
+
+            <div class="group bg-white rounded-xl shadow transition p-2 sm:p-4 relative hover:shadow-lg hover:scale-105 duration-500">
+                <button class="group-hover:block absolute top-3 right-3 z-10 opacity-0 group-hover:opacity-100 transition duration-500">
+                    <img src="./images/fav.png" alt="Favourite" class="w-6 h-6 transition">
+                </button>
+
+                <div class="relative mb-4">
+                    <img src="./images/h-d-product-3.png" alt="Home discounts product 1" class="w-full h-28 sm:h-40 object-cover rounded-lg my-4">
+                </div>
+
+                <div class="mb-5">
+                    <span class="text-md sm:text-xl font-bold text-[#414141]">44,50 ₽</span>
+                </div>
+
+                <h3 class="text-sm sm:text-[16px] font-semibold text-[#414141] mt-3">Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...</h3>
+
+                <div class="flex items-center mt-2 space-x-2">
+                    <img src="./images/Star-orange.png" alt="Rating star">
+                    <img src="./images/Star-orange.png" alt="Rating star">
+                    <img src="./images/Star-orange.png" alt="Rating star1">
+                    <img src="./images/Star-orange.png" alt="Rating star1">
+                    <img src="./images/Star-orange.png" alt="Rating star1">
+                </div>
+
+                <button class="mt-3 w-full bg-[#FFFFFF] rounded border border-[#70C05B] text-[#70C05B] group-hover:bg-[#FF6633] group-hover:border-none group-hover:text-[#FFFFFF] transition duration-500 py-1">В корзину</button>
+            </div>
+
+            <div class="group bg-white rounded-xl shadow transition p-2 sm:p-4 relative hover:shadow-lg hover:scale-105 duration-500">
+                <button class="group-hover:block absolute top-3 right-3 z-10 opacity-0 group-hover:opacity-100 transition duration-500">
+                    <img src="./images/fav.png" alt="Favourite" class="w-6 h-6 transition">
+                </button>
+
+                <div class="relative mb-4">
+                    <img src="./images/h-d-product-4.png" alt="Home discounts product 1" class="w-full h-28 sm:h-40 object-cover rounded-lg my-4">
+                </div>
+
+                <div class="mb-5">
+                    <span class="text-md sm:text-xl font-bold text-[#414141]">159,99 ₽</span>
+                </div>
+
+                <h3 class="text-sm sm:text-[16px] font-semibold text-[#414141] mt-3">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h3>
 
                 <div class="flex items-center mt-2 space-x-2">
                     <img src="./images/Star-orange.png" alt="Rating star">
@@ -346,20 +284,56 @@
                 <button class="mt-3 w-full bg-[#FFFFFF] rounded border border-[#70C05B] text-[#70C05B] group-hover:bg-[#FF6633] group-hover:border-none group-hover:text-[#FFFFFF] transition duration-500 py-1">В корзину</button>
             </div>
 
-            <div class="group bg-white rounded-xl shadow transition p-4 relative hover:shadow-lg hover:scale-105 hover:shadow-lg duration-500">
+            <div class="group bg-white rounded-xl shadow transition p-2 sm:p-4 relative hover:shadow-lg hover:scale-105 duration-500">
                 <button class="group-hover:block absolute top-3 right-3 z-10 opacity-0 group-hover:opacity-100 transition duration-500">
                     <img src="./images/fav.png" alt="Favourite" class="w-6 h-6 transition">
                 </button>
 
                 <div class="relative mb-4">
-                    <img src="./images/h-d-product-4.png" alt="Home discounts product 1" class="w-full h-40 object-cover rounded-lg mb-4">
+                    <img src="./images/h-d-product-2.png" alt="Home discounts product 1" class="w-full h-28 sm:h-40 object-cover rounded-lg my-4">
                 </div>
 
                 <div class="mb-5">
-                    <span class="text-lg font-bold text-[#414141]">159,99 ₽</span>
+                    <span class="text-md sm:text-xl font-bold text-[#414141]">49,39 ₽</span>
                 </div>
 
-                <h3 class="text-[16px] font-semibold text-[#414141] mb-3">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h3>
+                <h3 class="text-sm sm:text-[16px] font-semibold text-[#414141] mt-3">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h3>
+
+                <div class="flex items-center mt-2 space-x-2">
+                    <img src="./images/Star-orange.png" alt="Rating star">
+                    <img src="./images/Star-orange.png" alt="Rating star">
+                    <img src="./images/Star-gray.png" alt="Rating star1">
+                    <img src="./images/Star-gray.png" alt="Rating star1">
+                    <img src="./images/Star-gray.png" alt="Rating star1">
+                </div>
+
+                <button class="mt-3 w-full bg-[#FFFFFF] rounded border border-[#70C05B] text-[#70C05B] group-hover:bg-[#FF6633] group-hover:border-none group-hover:text-[#FFFFFF] transition duration-500 py-1">В корзину</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto my-10 px-4">
+        <div class="flex items-center justify-between mb-6">
+        <h2 class="text-2xl sm:text-4xl font-bold text-[#414141]">Покупали раньше</h2>
+        <a href="#" class="text-sm sm:text-md text-gray-700 hover:text-gray-900 transition duration-500">Все продукты ></a>
+        </div>
+
+
+        <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="group bg-white rounded-xl shadow transition p-2 sm:p-4 relative hover:shadow-lg hover:scale-105 duration-500">
+                <button class="group-hover:block absolute top-3 right-3 z-10 opacity-0 group-hover:opacity-100 transition duration-500">
+                    <img src="./images/fav.png" alt="Favourite" class="w-6 h-6 transition">
+                </button>
+
+                <div class="relative mb-4">
+                    <img src="./images/h-p-product-1.png" alt="Home discounts product 1" class="w-full h-28 sm:h-40 object-cover rounded-lg my-4">
+                </div>
+
+                <div class="mb-5">
+                    <span class="text-md sm:text-xl font-bold text-[#414141]">77,99 ₽</span>
+                </div>
+
+                <h3 class="text-sm sm:text-[16px] font-semibold text-[#414141] mt-3">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h3>
 
                 <div class="flex items-center mt-2 space-x-2">
                     <img src="./images/Star-orange.png" alt="Rating star">
@@ -372,20 +346,20 @@
                 <button class="mt-3 w-full bg-[#FFFFFF] rounded border border-[#70C05B] text-[#70C05B] group-hover:bg-[#FF6633] group-hover:border-none group-hover:text-[#FFFFFF] transition duration-500 py-1">В корзину</button>
             </div>
 
-            <div class="group bg-white rounded-xl shadow transition p-4 relative hover:shadow-lg hover:scale-105 hover:shadow-lg duration-500">
+            <div class="group bg-white rounded-xl shadow transition p-2 sm:p-4 relative hover:shadow-lg hover:scale-105 duration-500">
                 <button class="group-hover:block absolute top-3 right-3 z-10 opacity-0 group-hover:opacity-100 transition duration-500">
                     <img src="./images/fav.png" alt="Favourite" class="w-6 h-6 transition">
                 </button>
 
                 <div class="relative mb-4">
-                    <img src="./images/h-n-product-1.png" alt="Home discounts product 1" class="w-full h-40 object-cover rounded-lg mb-4">
+                    <img src="./images/h-d-product-4.png" alt="Home discounts product 1" class="w-full h-28 sm:h-40 object-cover rounded-lg my-4">
                 </div>
 
                 <div class="mb-5">
-                        <span class="text-lg font-bold text-[#414141]">599,99 ₽</span>
+                    <span class="text-md sm:text-xl font-bold text-[#414141]">159,99 ₽</span>
                 </div>
 
-                <h3 class="text-[16px] font-semibold text-[#414141] mb-3">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h3>
+                <h3 class="text-sm sm:text-[16px] font-semibold text-[#414141] mt-3">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h3>
 
                 <div class="flex items-center mt-2 space-x-2">
                     <img src="./images/Star-orange.png" alt="Rating star">
@@ -398,20 +372,46 @@
                 <button class="mt-3 w-full bg-[#FFFFFF] rounded border border-[#70C05B] text-[#70C05B] group-hover:bg-[#FF6633] group-hover:border-none group-hover:text-[#FFFFFF] transition duration-500 py-1">В корзину</button>
             </div>
 
-            <div class="group bg-white rounded-xl shadow transition p-4 relative hover:shadow-lg hover:scale-105 hover:shadow-lg duration-500">
+            <div class="group bg-white rounded-xl shadow transition p-2 sm:p-4 relative hover:shadow-lg hover:scale-105 duration-500">
                 <button class="group-hover:block absolute top-3 right-3 z-10 opacity-0 group-hover:opacity-100 transition duration-500">
                     <img src="./images/fav.png" alt="Favourite" class="w-6 h-6 transition">
                 </button>
 
                 <div class="relative mb-4">
-                    <img src="./images/h-d-product-2.png" alt="Home discounts product 1" class="w-full h-40 object-cover rounded-lg mb-4">
+                    <img src="./images/h-n-product-1.png" alt="Home discounts product 1" class="w-full h-28 sm:h-40 object-cover rounded-lg my-4">
                 </div>
 
                 <div class="mb-5">
-                        <span class="text-lg font-bold text-[#414141]">49,39 ₽</span>
+                        <span class="text-md sm:text-xl font-bold text-[#414141]">599,99 ₽</span>
                 </div>
 
-                <h3 class="text-[16px] font-semibold text-[#414141] mt-3">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h3>
+                <h3 class="text-sm sm:text-[16px] font-semibold text-[#414141] mt-3">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h3>
+
+                <div class="flex items-center mt-2 space-x-2">
+                    <img src="./images/Star-orange.png" alt="Rating star">
+                    <img src="./images/Star-orange.png" alt="Rating star">
+                    <img src="./images/Star-gray.png" alt="Rating star1">
+                    <img src="./images/Star-gray.png" alt="Rating star1">
+                    <img src="./images/Star-gray.png" alt="Rating star1">
+                </div>
+
+                <button class="mt-3 w-full bg-[#FFFFFF] rounded border border-[#70C05B] text-[#70C05B] group-hover:bg-[#FF6633] group-hover:border-none group-hover:text-[#FFFFFF] transition duration-500 py-1">В корзину</button>
+            </div>
+
+            <div class="group bg-white rounded-xl shadow transition p-2 sm:p-4 relative hover:shadow-lg hover:scale-105 duration-500">
+                <button class="group-hover:block absolute top-3 right-3 z-10 opacity-0 group-hover:opacity-100 transition duration-500">
+                    <img src="./images/fav.png" alt="Favourite" class="w-6 h-6 transition">
+                </button>
+
+                <div class="relative mb-4">
+                    <img src="./images/h-d-product-2.png" alt="Home discounts product 1" class="w-full h-28 sm:h-40 object-cover rounded-lg my-4">
+                </div>
+
+                <div class="mb-5">
+                        <span class="text-md sm:text-xl font-bold text-[#414141]">49,39 ₽</span>
+                </div>
+
+                <h3 class="text-sm sm:text-[16px] font-semibold text-[#414141] mt-3">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h3>
 
                 <div class="flex items-center mt-2 space-x-2">
                     <img src="./images/Star-orange.png" alt="Rating star">
@@ -428,23 +428,23 @@
 
     <section class="py-10">
         <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-4xl text-[#414141] font-bold text-gray-900 mb-10">Специальные предложения</h2>
+            <h2 class="text-3xl sm:text-4xl text-[#414141] font-bold text-gray-900 mb-10">Специальные предложения</h2>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-[#FCD5BA] rounded-xl p-7 flex items-center justify-between transition-all duration-500 hover:shadow-lg hover:scale-104 cursor-pointer">
+                <div class="bg-[#FCD5BA] rounded-xl p-7 flex items-center justify-between transition-all duration-500 hover:shadow-lg hover:scale-104 cursor-pointer overflow-hidden">
                     <div>
-                        <h3 class="text-3xl text-[#414141] font-bold text-gray-900 mb-3">Оформите карту «Северяночка»</h3>
-                        <p class="text-gray-700 text-md">И получайте бонусы при покупке в магазинах и на сайте</p>
+                        <h3 class="text-[20px] sm:text-3xl text-[#414141] font-bold text-gray-900 mb-3">Оформите карту «Северяночка»</h3>
+                        <p class="text-gray-700 text-[14px] sm:text-md">И получайте бонусы при покупке в магазинах и на сайте</p>
                     </div>
-                    <img src="./images/s-o-card-1.png" alt="card">
+                    <img src="./images/s-o-card-1.png" alt="card" class="max-w-[90%]">
                 </div>
 
-                <div class="bg-[#E5FFDE] rounded-xl p-7 flex items-center justify-between transition-all duration-500 hover:shadow-lg hover:scale-104 cursor-pointer">
+                <div class="bg-[#E5FFDE] rounded-xl p-7 flex items-center justify-between transition-all duration-500 hover:shadow-lg hover:scale-104 cursor-pointer overflow-hidden">
                     <div>
-                        <h3 class="text-3xl text-[#414141] font-bold text-gray-900 mb-3">Покупайте акционные товары</h3>
-                        <p class="text-gray-700 text-md">И получайте вдвое больше бонусов</p>
+                        <h3 class="text-[20px] sm:text-3xl text-[#414141] font-bold text-gray-900 mb-3">Покупайте акционные товары</h3>
+                        <p class="text-gray-700 text-[14px] sm:text-md">И получайте вдвое больше бонусов</p>
                     </div>
-                    <img src="./images/s-o-card-2.png" alt="card">
+                    <img src="./images/s-o-card-2.png" alt="card" class="max-w-[50%]">
                 </div>
             </div>
         </div>
@@ -452,7 +452,7 @@
 
     <section class="py-10">
         <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-[#414141] mb-10">Наши магазины</h2>
+            <h2 class="text-2xl sm:text-3xl font-bold text-[#414141] mb-10">Наши магазины</h2>
 
             <div class="flex flex-wrap gap-3 mb-6">
                 <button class="bg-[#F3F2F1] text-[#414141] px-5 py-2 rounded-md hover:bg-[#70C05B] hover:text-white transition duration-500">п.Щельяюр</button>
@@ -462,45 +462,45 @@
             </div>
 
             <div>
-                <img src="./images/map.png" alt="map" class="w-full">
+                <img src="./images/map.png" alt="map" class="w-full rounded-xl object-cover h-[350px] lg:h-[400px]">
             </div>
         </div>
     </section>
 
     <section class="py-10">
         <div class="max-w-7xl mx- mx-auto px-4">
-            <h2 class="text-4xl font-bold mb-6 text-[#414141]">Статьи</h2>
+            <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-[#414141]">Статьи</h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-3">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center">
 
-                <div class="group bg-[#FFFFFF] rounded-lg shadow w-[375px] transition-transform duration-500 hover:shadow-lg hover:scale-104 flex flex-col">
+                <div class="group bg-[#FFFFFF] rounded-lg shadow w-[340px] sm:w-[375px] transition-transform duration-500 hover:shadow-lg hover:scale-104 flex flex-col">
                     <img src="./images/h-a-img-1.png" alt="Articles image 1" class="w-full object-cover rounded">
                     <div class="p-2 flex flex-col flex-grow">
                         <p class="text-[#8F8F8F] text-[12px] mt-2">05.03.2021</p>
-                        <h3 class="text-[#414141] text-[20px] font-bold mt-2">Режим использования масок и перчаток на территории магазинов</h3>
-                        <p class="text-[16px] text-[#414141] mt-2">Подробная информация о режимах использования масок и перчаток на территории магазинов "ЛЕНТА". Информация обновляется каждый будний день.</p>
+                        <h3 class="text-[#414141] text-[18px] sm:text-[20px] font-bold mt-2">Режим использования масок и перчаток на территории магазинов</h3>
+                        <p class="text-[13px] sm:text-[16px] text-[#414141] mt-2">Подробная информация о режимах использования масок и перчаток на территории магазинов "ЛЕНТА". Информация обновляется каждый будний день.</p>
                         <div class="flex-grow"></div>
                         <button class="mt-4 px-4 py-2 bg-[#E5FFDE] text-[#70C05B] rounded-lg group-hover:bg-[#70C05B] group-hover:text-[#FFFFFF] transition duration-500">Подробнее</button>
                     </div>
                 </div>
 
-                <div class="group bg-[#FFFFFF] rounded-lg shadow w-[375px] transition-transform duration-500 hover:shadow-lg hover:scale-104 flex flex-col">
+                <div class="group bg-[#FFFFFF] rounded-lg shadow w-[340px] sm:w-[375px] transition-transform duration-500 hover:shadow-lg hover:scale-104 flex flex-col">
                     <img src="./images/h-a-img-2.png" alt="Articles image 1" class="w-full object-cover rounded">
                     <div class="p-2 flex flex-col flex-grow">
                         <p class="text-[#8F8F8F] text-[12px] mt-2">05.03.2021</p>
-                        <h3 class="text-[#414141] text-[20px] font-bold mt-2">Весеннее настроение для каждой</h3>
-                        <p class="text-[16px] text-[#414141] mt-2">8 Марта – это не просто Международный женский день, это ещё день тюльпанов, приятных сюрпризов и праздничных тёплых пожеланий.</p>
+                        <h3 class="text-[#414141] text-[18px] sm:text-[20px] font-bold mt-2">Весеннее настроение для каждой</h3>
+                        <p class="text-[13px] sm:text-[16px] text-[#414141] mt-2">8 Марта – это не просто Международный женский день, это ещё день тюльпанов, приятных сюрпризов и праздничных тёплых пожеланий.</p>
                         <div class="flex-grow"></div>
                         <button class="mt-4 px-4 py-2 bg-[#E5FFDE] text-[#70C05B] rounded-lg group-hover:bg-[#70C05B] group-hover:text-[#FFFFFF] transition duration-500">Подробнее</button>
                     </div>
                 </div>
 
-                <div class="group bg-[#FFFFFF] rounded-lg shadow w-[375px] transition-transform duration-500 hover:shadow-lg hover:scale-104 flex flex-col">
+                <div class="group bg-[#FFFFFF] rounded-lg shadow w-[340px] sm:w-[375px] transition-transform duration-500 hover:shadow-lg hover:scale-104 flex flex-col">
                     <img src="./images/h-a-img-3.png" alt="Articles image 1" class="w-full object-cover rounded">
                     <div class="p-2 flex flex-col flex-grow">
                         <p class="text-[#8F8F8F] text-[12px] mt-2">22.02.2020</p>
-                        <h3 class="text-[#414141] text-[20px] font-bold mt-2">ЗОЖ или ФАСТФУД. А вы на чьей стороне? Голосуем!</h3>
-                        <p class="text-[16px] text-[#414141] mt-2">Голосуйте за любимые категории, выбирайте категорию-победителя в мобильном приложении и получайте кешбэк 10% баллами в апреле!</p>
+                        <h3 class="text-[#414141] text-[18px] sm:text-[20px] font-bold mt-2">ЗОЖ или ФАСТФУД. А вы на чьей стороне? Голосуем!</h3>
+                        <p class="text-[13px] sm:text-[16px] text-[#414141] mt-2">Голосуйте за любимые категории, выбирайте категорию-победителя в мобильном приложении и получайте кешбэк 10% баллами в апреле!</p>
                         <div class="flex-grow"></div>
                         <button class="mt-4 px-4 py-2 bg-[#E5FFDE] text-[#70C05B] rounded-lg group-hover:bg-[#70C05B] group-hover:text-[#FFFFFF] transition duration-500">Подробнее</button>
                     </div>
