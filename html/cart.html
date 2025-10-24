@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zxc</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#FBF8EC]">
+    <header class="fixed top-0 left-0 w-full bg-[#FFFFFF] shadow-lg z-50">
+        <div class="max-w-7xl mx-auto flex items-center justify-between p-4 gap-5 sm:gap-0">
+
+            <div class="flex items-center gap-3">
+                <a href="../index.html"><img src="../images/logo.png" alt="Logo"></a>
+                <span class="text-xl font-bold text-[#414141] hidden lg:inline">Северяночка</span>
+            </div>
+
+            <div class="flex flex-1 max-w-xs mx-3 sm:max-w-md lg:max-w-lg">
+                <input type="text" placeholder="Найти товар" class="w-full outline-none border border-[#70C05B] border-r-0 rounded-l-md  px-3 py-2 ">
+                <button class="text-white px-4 border border-[#70C05B] border-l-0 rounded-r-md cursor-pointer">
+                    <img src="../images/search.png" alt="Search">
+                </button>
+            </div>
+
+            <div class="hidden sm:flex items-center space-x-6">
+
+                <div class="flex flex-col items-center cursor-pointer">
+                    <img src="../images/fav.png" alt="Favourite" class="w-6 h-6 mb-1 cursor-pointer">
+                    <span class="text-xs text-gray-700 font-medium">Избранное</span>
+                </div>
+
+                <div class="flex flex-col items-center cursor-pointer">
+                    <img src="../images/products.png" alt="Products" class="w-6 h-6 mb-1 cursor-pointer">
+                    <span class="text-xs text-gray-700 font-medium">Продукты</span>
+                </div>
+
+                <div class="flex flex-col items-center cursor-pointer">
+                    <img src="../images/cart.png" alt="Cart" class="w-6 h-6 mb-1 cursor-pointer">
+                    <span class="text-xs text-gray-700 font-medium">Корзина</span>
+                </div>
+            </div>
+
+            <div class="hidden sm:flex items-center space-x-2 cursor-pointer">
+                <img src="../images/user.png" alt="User" class="w-10 h-10">
+                <span class="font-medium ">Алексей</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="max-w-7xl mx-auto mt-25 px-4">
+        <div class="flex items-center text-gray-700 text-md">
+            <a href="../index.html" class="hover:text-gray-900 transition duration-500">Главная</a>
+            <span class="mx-4 text-gray-700 text-lg"> › </span>
+            <span class="text-gray-700">Корзина</span>
+        </div>
+
+        <div class="flex items-center gap-4 mt-4">
+            <h1 class="text-6xl font-bold text-[#414141]">Корзина</h1>
+            <span id="cart__count" class="bg-[#FF6633] text-white text-md font-semibold rounded-md px-2 py-1">0</span>
+        </div>
+    </div>
+
+    <section class="max-w-7xl mx-auto mt-6 px-4 space-y-4">
+        <div class="flex flex-col justify-between items-start bg-white shadow-lg rounded-xl p-4 gap-4">
+            <div class="flex items-center gap-4 flex-1 w-full">
+                <div>
+                    <img src="../images/Korzina.png" alt="Product" class="w-full h-full object-cover rounded-md">
+                </div>
+                <div class="flex flex-col flex-1">
+                    <h2 class="text-[#414141] font-semibold text-lg">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h2>
+                    <p class="text-[#414141] text-[12px] font-bold mt-3">44,50 ₽ <span class="text-[#606060] text-[12px] font-semibold ml-4"> за шт.</span></p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2 bg-[#70C05B] text-white rounded-md text-lg font-bold p-2">
+                        <button class="w-8 h-8 flex justify-center items-center">-</button>
+                        <span class="text-lg font-semibold">2</span>
+                        <button class="w-8 h-8 flex justify-center items-center text-lg font-bold">+</button>
+                    </div>
+                    <p class="text-lg font-bold text-[#414141] text-[18px]">89,00 ₽</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col justify-between items-start bg-white shadow-lg rounded-xl p-4 gap-4">
+            <div class="flex items-center gap-4 flex-1 w-full">
+                <div>
+                    <img src="../images/Korzina.png" alt="Product" class="w-full h-full object-cover rounded-md">
+                </div>
+                <div class="flex flex-col flex-1">
+                    <h2 class="text-[#414141] font-semibold text-lg">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h2>
+                    <div class="flex items-center gap-2 mt-3">
+                        <p class="text-[#414141] text-[12px] font-bold">44,50 ₽</p>
+                        <p class="text-[#606060] text-[12px] font-semibold ml-2"> 50,50 ₽</p>
+                        <span class="text-[#606060] text-[12px] font-semibold ml-2"> за шт.</span>
+                        <span class="w-[50px] h-[30px] rounded-md flex justify-center text-[14px] inline-block mt-2 bg-[#FF6633] font-semibold text-white px-2 py-1">-10%</span>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2 bg-[#70C05B] text-white rounded-md text-lg font-bold p-2">
+                        <button class="w-8 h-8 flex justify-center items-center">-</button>
+                        <span class="text-lg font-semibold">2</span>
+                        <button class="w-8 h-8 flex justify-center items-center text-lg font-bold">+</button>
+                    </div>
+                    <div>
+                        <p class="text-lg font-bold text-[#414141] text-[18px]">80,10 ₽</p>
+                        <p class="text-[#8F8F8F] text-[16px]"><del>89,00 ₽</del></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col justify-between items-start bg-white shadow-lg rounded-xl p-4 gap-4">
+            <div class="flex items-center gap-4 flex-1 w-full">
+                <div>
+                    <img src="../images/Korzina.png" alt="Product" class="w-full h-full object-cover rounded-md">
+                </div>
+                <div class="flex flex-col flex-1">
+                    <h2 class="text-[#414141] font-semibold text-lg">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h2>
+                    <p class="text-[#414141] text-[12px] font-bold mt-3">44,50 ₽ <span class="text-[#606060] text-[12px] font-semibold ml-4"> за шт.</span></p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2 bg-[#70C05B] text-white rounded-md text-lg font-bold p-2">
+                        <button class="w-8 h-8 flex justify-center items-center">-</button>
+                        <span class="text-lg font-semibold">2</span>
+                        <button class="w-8 h-8 flex justify-center items-center text-lg font-bold">+</button>
+                    </div>
+                    <p class="text-lg font-bold text-[#414141] text-[18px]">89,00 ₽</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
