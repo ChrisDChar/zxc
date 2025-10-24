@@ -54,14 +54,27 @@
             <span class="text-gray-700">Корзина</span>
         </div>
 
-        <div class="flex items-center gap-4 mt-4">
+        <div class="flex items-center gap-4 mt-4 mb-20">
             <h1 class="text-6xl font-bold text-[#414141]">Корзина</h1>
             <span id="cart__count" class="bg-[#FF6633] text-white text-md font-semibold rounded-md px-2 py-1">0</span>
         </div>
     </div>
 
+    <div class="max-w-7xl mx-auto px-4 mb-6">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <label class="flex items-center gap-2 cursor-pointer">
+                    <input type="checkbox" class="w-5 h-5 accent-[#70C05B] mr-1">
+                    <span class="text-[#606060] text-[14px] font-medium">Выделить всё</span>
+                </label>
+                <button class="text-[#FF6633] text-[14px] font-medium sm:ml-15 cursor-pointer">Удалить выбранные</button>
+            </div>
+        </div>
+    </div>
+
     <section class="max-w-7xl mx-auto mt-6 px-4 space-y-4">
-        <div class="flex flex-col justify-between items-start bg-white shadow-lg rounded-xl p-4 gap-4">
+        <div class="relative flex flex-col justify-between items-start bg-white shadow-md transition duration-500 hover:scale-103 hover:shadow-lg rounded-xl p-4 gap-4">
+            <input type="checkbox" class="absolute top-2 left-2 w-5 h-5 accent-[#70C05B] cursor-pointer">
             <div class="flex items-center gap-4 flex-1 w-full">
                 <div>
                     <img src="../images/Korzina.png" alt="Product" class="w-full h-full object-cover rounded-md">
@@ -80,7 +93,8 @@
                 </div>
             </div>
         </div>
-        <div class="flex flex-col justify-between items-start bg-white shadow-lg rounded-xl p-4 gap-4">
+        <div class="relative flex flex-col justify-between items-start bg-white shadow-md transition duration-500 hover:scale-103 hover:shadow-lg rounded-xl p-4 gap-4">
+            <input type="checkbox" class="absolute top-2 left-2 w-5 h-5 accent-[#70C05B] cursor-pointer">
             <div class="flex items-center gap-4 flex-1 w-full">
                 <div>
                     <img src="../images/Korzina.png" alt="Product" class="w-full h-full object-cover rounded-md">
@@ -107,7 +121,8 @@
                 </div>
             </div>
         </div>
-        <div class="flex flex-col justify-between items-start bg-white shadow-lg rounded-xl p-4 gap-4">
+        <div class="relative flex flex-col justify-between items-start bg-white shadow-md transition duration-500 hover:scale-103 hover:shadow-lg rounded-xl p-4 gap-4">
+        <input type="checkbox" class="absolute top-2 left-2 w-5 h-5 accent-[#70C05B] cursor-pointer">
             <div class="flex items-center gap-4 flex-1 w-full">
                 <div>
                     <img src="../images/Korzina.png" alt="Product" class="w-full h-full object-cover rounded-md">
@@ -127,6 +142,7 @@
             </div>
         </div>
     </section>
+
 
     <script src="./js/main.js"></script>
 </body>
