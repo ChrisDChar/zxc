@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zxc</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#FBF8EC] pb-16 sm:pb-0">
+    <header class="fixed top-0 left-0 w-full bg-[#FFFFFF] shadow-lg z-50">
+        <div class="max-w-7xl mx-auto flex items-center justify-between p-4 gap-5 sm:gap-0">
+
+            <a href="../index.html" class="flex items-center gap-3 cursor-pointer">
+                <img src="../images/logo.png" alt="Logo">
+                <span class="text-xl font-bold text-[#414141] hidden lg:inline">Северяночка</span>
+            </a>
+
+            <div class="hidden md:block cursor-pointer">
+                <a href="../html/catalog.html" class="flex items-center gap-2 bg-[#70C05B] text-white px-4 py-2 rounded-md font-medium">
+                    <img src="../images/menu.png" alt="menu">
+                    Каталог
+                </a>
+            </div>
+
+            <div class="flex flex-1 max-w-xs mx-3 sm:max-w-md lg:max-w-lg">
+                <input type="text" placeholder="Найти товар" class="w-full outline-none border border-[#70C05B] border-r-0 rounded-l-md  px-3 py-2 ">
+                <button class="text-white px-4 border border-[#70C05B] border-l-0 rounded-r-md cursor-pointer">
+                    <img src="../images/search.png" alt="Search">
+                </button>
+            </div>
+
+            <div class="hidden sm:flex items-center space-x-6">
+
+                <div class="flex flex-col items-center cursor-pointer">
+                    <img src="../images/fav.png" alt="Favourite" class="w-6 h-6 mb-1 cursor-pointer">
+                    <span class="text-xs text-gray-700 font-medium">Избранное</span>
+                </div>
+
+                <div class="flex flex-col items-center cursor-pointer">
+                    <img src="../images/products.png" alt="Products" class="w-6 h-6 mb-1 cursor-pointer">
+                    <span class="text-xs text-gray-700 font-medium">Продукты</span>
+                </div>
+
+                <div class="flex flex-col items-center cursor-pointer">
+                    <a href="../html/cart.html">
+                        <img src="../images/cart.png" alt="Cart" class="w-6 h-6 mb-1 cursor-pointer">
+                        <span class="text-xs text-gray-700 font-medium">Корзина</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hidden sm:flex items-center space-x-2 cursor-pointer">
+                <img src="../images/user.png" alt="User" class="w-10 h-10">
+                <span class="font-medium ">Алексей</span>
+            </div>
+        </div>
+    </header>
+    <nav class="sm:hidden fixed bottom-0 left-0 w-full bg-white z-50 flex justify-around py-2">
+        <div class="flex flex-col items-center justify-center cursor-pointer">
+            <a href="">
+                <img src="../images/catalog.png" alt="Каталог" class="w-6 h-6 mb-1 mx-auto">
+                <span class="text-xs text-[#414141] font-medium">Каталог</span>
+            </a>
+        </div>
+
+        <div class="flex flex-col items-center cursor-pointer">
+            <a href="">
+                <img src="../images/fav.png" alt="Избранное" class="w-6 h-6 mb-1 mx-auto">
+                <span class="text-xs text-[#414141] font-medium">Избранное</span>
+            </a>
+        </div>
+
+        <div class="flex flex-col items-center cursor-pointer">
+            <a href="">
+                <img src="../images/products.png" alt="Заказы" class="w-6 h-6 mb-1 mx-auto">
+                <span class="text-xs text-[#414141] font-medium">Заказы</span>
+            </a>
+        </div>
+
+        <div class="flex flex-col items-center cursor-pointer">
+            <a href="../html/cart.html">
+                <img src="../images/cart.png" alt="Корзина" class="w-6 h-6 mb-1 mx-auto">
+                <span class="text-xs text-[#414141] font-medium">Корзина</span>
+            </a>
+        </div>
+
+        <div>
+            <img src="../images/user.png" alt="Профиль">
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto mt-25 px-4">
+        <div class="flex items-center text-gray-700 text-md">
+            <a href="../index.html" class="hover:text-gray-900 transition duration-500">Главная</a>
+            <span class="mx-4 text-gray-700 text-lg"> › </span>
+            <span class="text-gray-700">Каталог</span>
+        </div>
+
+        <div class="flex items-center gap-4 mt-4 mb-20">
+            <h1 class="text-6xl font-bold text-[#414141]">Каталог</h1>
+        </div>
+    </div>
+
+    <section class="px-6 sm:px-10 py-8 bg-[#F9F4E2]">
+        <div class="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center">
+
+            <div class="col-span-2 sm:col-span-2 lg:col-span-2 w-[330px] h-[140px] sm:w-[450px] sm:h-[140px] lg:w-[580px] lg:h-[200px] relative sm:col-span-2 md:col-span-2 lg:col-span-1 rounded-md overflow-hidden shadow hover:shadow-lg transition duration-500 cursor-pointer">
+                <img src="../images/catalog-milk.png" alt="catalog" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#70C05B]/90 to-transparent hover:from-[#FF6633] transition duration-300"></div>
+                <p class="absolute bottom-1 left-2 text-white font-semibold text-sm sm:text-base">Молоко, сыр, яйцо</p>
+            </div>
+            <div class="w-[160px] h-[140px] sm:w-[250px] sm:h-[140px] lg:w-[270px] lg:h-[200px] relative rounded-md overflow-hidden shadow hover:shadow-lg transition duration-500 cursor-pointer">
+                <img src="../images/catalog-bread.png" alt="catalog" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#70C05B]/90 to-transparent hover:from-[#FF6633] transition duration-300"></div>
+                <p class="absolute bottom-1 left-2 text-white font-semibold text-sm sm:text-base">Хлеб</p>
+            </div>
+            <div class="w-[160px] h-[140px] sm:w-[250px] sm:h-[140px] lg:w-[270px] lg:h-[200px] relative rounded-md overflow-hidden shadow hover:shadow-lg transition duration-500 cursor-pointer">
+                <img src="../images/catalog-fruits.png" alt="catalog" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#70C05B]/90 to-transparent hover:from-[#FF6633] transition duration-300"></div>
+                <p class="absolute bottom-1 left-2 text-white font-semibold text-sm sm:text-base">Фрукты и овощи</p>
+            </div>
+
+            <div class="w-[160px] h-[140px] sm:w-[250px] sm:h-[140px] lg:w-[270px] lg:h-[200px] relative rounded-md overflow-hidden shadow hover:shadow-lg transition duration-500 cursor-pointer">
+                <img src="../images/catalog-frozen.png" alt="catalog" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#70C05B]/90 to-transparent hover:from-[#FF6633] transition duration-300"></div>
+                <p class="absolute bottom-1 left-2 text-white font-semibold text-sm sm:text-base">Замороженные продукты</p>
+            </div>
+            <div class="w-[160px] h-[140px] sm:w-[250px] sm:h-[140px] lg:w-[270px] lg:h-[200px] relative rounded-md overflow-hidden shadow hover:shadow-lg transition duration-500 cursor-pointer">
+                <img src="../images/catalog-drinks.png" alt="catalog" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#70C05B]/90 to-transparent hover:from-[#FF6633] transition duration-300"></div>
+                <p class="absolute bottom-1 left-2 text-white font-semibold text-sm sm:text-base">Напитки</p>
+            </div>
+            <div class="w-[160px] h-[140px] sm:w-[250px] sm:h-[140px] lg:w-[270px] lg:h-[200px] relative rounded-md overflow-hidden shadow hover:shadow-lg transition duration-500 cursor-pointer">
+                <img src="../images/catalog-konditer.png" alt="catalog" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#70C05B]/90 to-transparent hover:from-[#FF6633] transition duration-300"></div>
+                <p class="absolute bottom-1 left-2 text-white font-semibold text-sm sm:text-base">Кондитерские изделия</p>
+            </div>
+            <div class="w-[160px] h-[140px] sm:w-[250px] sm:h-[140px] lg:w-[270px] lg:h-[200px] relative rounded-md overflow-hidden shadow hover:shadow-lg transition duration-500 cursor-pointer">
+                <img src="../images/catalog-tea-coffee.png" alt="catalog" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#70C05B]/90 to-transparent hover:from-[#FF6633] transition duration-300"></div>
+                <p class="absolute bottom-1 left-2 text-white font-semibold text-sm sm:text-base">Чай, кофе</p>
+            </div>
+
+            <div class="w-[160px] h-[140px] sm:w-[250px] sm:h-[140px] lg:w-[270px] lg:h-[200px] relative rounded-md overflow-hidden shadow hover:shadow-lg transition duration-500 cursor-pointer">
+                <img src="../images/catalog-bakaleya.png" alt="catalog" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#70C05B]/90 to-transparent hover:from-[#FF6633] transition duration-300"></div>
+                <p class="absolute bottom-1 left-2 text-white font-semibold text-sm sm:text-base">Бакалея</p>
+            </div>
+            <div class="w-[160px] h-[140px] sm:w-[250px] sm:h-[140px] lg:w-[270px] lg:h-[200px] relative rounded-md overflow-hidden shadow hover:shadow-lg transition duration-500 cursor-pointer">
+                <img src="../images/catalog-healthy.png" alt="catalog" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#70C05B]/90 to-transparent hover:from-[#FF6633] transition duration-300"></div>
+                <p class="absolute bottom-1 left-2 text-white font-semibold text-sm sm:text-base">Здоровое питание</p>
+            </div>
+            <div class="col-span-2 sm:col-span-2 lg:col-span-2 w-[330px] h-[140px] sm:w-[450px] sm:h-[140px] lg:w-[580px] lg:h-[200px] relative sm:col-span-2 md:col-span-2 lg:col-span-1 rounded-md overflow-hidden shadow hover:shadow-lg transition duration-500 cursor-pointer">
+                <img src="../images/catalog-zoo.png" alt="catalog" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#70C05B]/90 to-transparent hover:from-[#FF6633] transition duration-300"></div>
+                <p class="absolute bottom-1 left-2 text-white font-semibold text-sm sm:text-base">Зоотовары</p>
+            </div>
+
+            <div class="order-1 sm:order-none w-[160px] h-[140px] sm:w-[250px] sm:h-[140px] lg:w-[270px] lg:h-[200px] relative rounded-md overflow-hidden shadow hover:shadow-lg transition duration-500 cursor-pointer">
+                <img src="../images/catalog-detskoe.png" alt="catalog" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#70C05B]/90 to-transparent hover:from-[#FF6633] transition duration-300"></div>
+                <p class="absolute bottom-1 left-2 text-white font-semibold text-sm sm:text-base">Детское питание</p>
+            </div>
+            <div class="order-3 sm:order-none col-span-2 sm:col-span-2 lg:col-span-2 w-[330px] h-[140px] sm:w-[450px] sm:h-[140px] lg:w-[580px] lg:h-[200px] relative sm:col-span-2 md:col-span-2 lg:col-span-1 rounded-md overflow-hidden shadow hover:shadow-lg transition duration-500 cursor-pointer">
+                <img src="../images/catalog-meat.png" alt="catalog" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#70C05B]/90 to-transparent hover:from-[#FF6633] transition duration-300"></div>
+                <p class="absolute bottom-1 left-2 text-white font-semibold text-sm sm:text-base">Мясо, птица, колбаса</p>
+            </div>
+            <div class="order-2 sm:order-none w-[160px] h-[140px] sm:w-[250px] sm:h-[140px] lg:w-[270px] lg:h-[200px] relative rounded-md overflow-hidden shadow hover:shadow-lg transition duration-500 cursor-pointer">
+                <img src="../images/catalog-tovari.png" alt="catalog" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#70C05B]/90 to-transparent hover:from-[#FF6633] transition duration-300"></div>
+                <p class="absolute bottom-1 left-2 text-white font-semibold text-sm sm:text-base">Непродовольственные товары</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[url('/images/footer-bg.png')] bg-repeat py-6 px-10 bg-[#F9F4E2]">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center justify-center md:justify-start order-1 md:order-1">
+                <img src="../images/footer-logo.png" alt="Footer logo" class="w-16 h-auto">
+            </div>
+            <nav class="flex flex-col md:flex-row flex-wrap justify-center gap-6 text-sm md:text-md font-medium text-[#414141] order-3 md:order-2 mt-4 md:mt-0">
+                <div class="flex flex-wrap justify-center gap-3">
+                    <a href="#" class="transition hover:text-[#FF6633] duration-500">О компании</a>
+                    <a href="#" class="transition hover:text-[#FF6633] duration-500">Контакты</a>
+                    <a href="#" class="transition hover:text-[#FF6633] duration-500">Вакансии</a>
+                    <a href="#" class="transition hover:text-[#FF6633] duration-500">Статьи</a>
+                </div>
+                <a href="#" class="transition hover:text-[#FF6633] duration-500">Политика обработки персональных данных</a>
+            </nav>
+            <div class="flex flex-col md:flex-row items-center gap-3 md:gap-6 order-2 md:order-3 mt-4 md:mt-0 w-full md:w-auto justify-center md:justify-end">
+                <div class="flex gap-3">
+                    <a href="#"><img src="../images/instagram.png" alt="instagram"></a>
+                    <a href="#"><img src="../images/vkontakte.png" alt="vkontakte"></a>
+                    <a href="#"><img src="../images/facebook.png" alt="facebook"></a>
+                    <a href="#"><img src="../images/ok.png" alt="ok"></a>
+                </div>
+                <div class="flex items-center gap-2 text-md font-medium text-[#414141]">
+                    <img src="../images/phone.png" alt="phone">
+                    <span>8 800 777 33 33</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
