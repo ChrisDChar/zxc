@@ -31,10 +31,10 @@
 
             <div class="hidden sm:flex items-center space-x-6">
 
-                <div class="flex flex-col items-center cursor-pointer">
-                    <img src="../images/fav.png" alt="Favourite" class="w-6 h-6 mb-1 cursor-pointer">
-                    <span class="text-xs text-gray-700 font-medium">Избранное</span>
-                </div>
+                <a href="../html/all-products.html" class="flex flex-col items-center cursor-pointer">
+                    <img src="../images/products.png" alt="Products" class="w-6 h-6 mb-1 cursor-pointer">
+                    <span class="text-xs text-gray-700 font-medium">Продукты</span>
+                </a>
 
                 <div class="flex flex-col items-center cursor-pointer">
                     <img src="../images/products.png" alt="Products" class="w-6 h-6 mb-1 cursor-pointer">
@@ -57,7 +57,7 @@
     </header>
     <nav class="sm:hidden fixed bottom-0 left-0 w-full bg-white z-50 flex justify-around py-2">
         <div class="flex flex-col items-center justify-center cursor-pointer">
-            <a href="">
+            <a href="../html/catalog.html">
                 <img src="../images/catalog.png" alt="Каталог" class="w-6 h-6 mb-1 mx-auto">
                 <span class="text-xs text-[#414141] font-medium">Каталог</span>
             </a>
@@ -71,7 +71,7 @@
         </div>
 
         <div class="flex flex-col items-center cursor-pointer">
-            <a href="">
+            <a href="../html/all-products.html">
                 <img src="../images/products.png" alt="Заказы" class="w-6 h-6 mb-1 mx-auto">
                 <span class="text-xs text-[#414141] font-medium">Заказы</span>
             </a>
@@ -89,6 +89,17 @@
         </div>
     </nav>
 
+    <section class="max-w-7xl mx-auto my-20 px-4">
+        <div class="allProducts grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+
+        <div class="flex justify-center items-center space-x-2 mt-8 text-gray-600">
+            <button class="px-2 hover:text-[#FF6633] transition duration-300">&laquo;</button>
+            <button class="px-2 hover:text-[#FF6633] transition duration-300">1</button>
+            <button class="px-2 hover:text-[#FF6633] transition duration-300">2</button>
+            <button class="px-2 hover:text-[#FF6633] transition duration-300">3</button>
+            <button class="px-2 hover:text-[#FF6633] transition duration-300">&raquo;</button>
+            </div>
+    </section>
 
 
     <footer class="bg-[url('/images/footer-bg.png')] bg-repeat py-6 px-10 bg-[#F9F4E2]">
@@ -120,6 +131,7 @@
         </div>
     </footer>
 
-    <script src="./js/main.js"></script>
+    <script src="../products-data/products-data.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>
