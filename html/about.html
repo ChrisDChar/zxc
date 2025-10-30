@@ -93,103 +93,80 @@
         <div class="flex items-center text-gray-700 text-md">
             <a href="../index.html" class="hover:text-gray-900 transition duration-500">Главная</a>
             <span class="mx-4 text-gray-700 text-lg"> › </span>
-            <span class="text-gray-700">Корзина</span>
-        </div>
-
-        <div class="flex items-center gap-4 mt-4 mb-20">
-            <h1 class="text-6xl font-bold text-[#414141]">Корзина</h1>
-            <span id="cart__count" class="bg-[#FF6633] text-white text-md font-semibold rounded-md px-2 py-1">0</span>
+            <span class="text-gray-700">О компании</span>
         </div>
     </div>
 
-    <div class="max-w-7xl mx-auto px-4 mb-6">
-        <div class="flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <label class="flex items-center gap-2 cursor-pointer">
-                    <input type="checkbox" class="w-5 h-5 accent-[#70C05B] mr-1">
-                    <span class="text-[#606060] text-[14px] font-medium">Выделить всё</span>
-                </label>
-                <button class="text-[#FF6633] text-[14px] font-medium sm:ml-15 cursor-pointer">Удалить выбранные</button>
+    <section class="max-w-7xl mx-auto py-10 px-4 md:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 mb-20 items-center">
+            <div>
+                <h1 class="text-[36px] md:text-[48px] lg:text-[64px] font-bold text-[#414141] mb-4">О компании</h1>
+                <p class="text-[14px] md:text-[18px] lg:text-[24px] font-bold text-[#FF6633]">Мы непрерывно развиваемся и <br> работаем над совершенствованием сервиса, <br> заботимся о наших клиентах, <br> стремимся к лучшему будущему.</p>
             </div>
-        </div>
-    </div>
 
-    <section class="max-w-7xl mx-auto mt-6 px-4 py-10 space-y-4">
-        <div class="relative flex flex-col justify-between items-start bg-white shadow-md transition duration-500 hover:scale-103 hover:shadow-lg rounded-xl p-4 gap-4">
-            <input type="checkbox" class="absolute top-2 left-2 w-5 h-5 accent-[#70C05B] cursor-pointer">
-            <div class="flex items-center gap-4 flex-1 w-full">
-                <div>
-                    <img src="../images/Korzina.png" alt="Product" class="w-full h-full object-cover rounded-md">
-                </div>
-                <div class="flex flex-col flex-1">
-                    <h2 class="text-[#414141] font-semibold text-lg">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h2>
-                    <p class="text-[#414141] text-[12px] font-bold mt-3">44,50 ₽ <span class="text-[#606060] text-[12px] font-semibold ml-4"> за шт.</span></p>
-                </div>
-                <div class="flex items-center gap-4">
-                    <div class="flex items-center gap-2 bg-[#70C05B] text-white rounded-md text-lg font-bold p-2">
-                        <button class="w-8 h-8 flex justify-center items-center">-</button>
-                        <span class="text-lg font-semibold">2</span>
-                        <button class="w-8 h-8 flex justify-center items-center text-lg font-bold">+</button>
-                    </div>
-                    <p class="text-lg font-bold text-[#414141] text-[18px]">89,00 ₽</p>
+            <div class="flex justify-center">
+                <div class="bg-[#E5FFDE] rounded-[60px] w-full max-w-3xl flex items-center justify-center ">
+                    <img src="../images/about-main.png" alt="about-main" class="w-full h-full object-contain rounded-[40px]">
                 </div>
             </div>
         </div>
-        <div class="relative flex flex-col justify-between items-start bg-white shadow-md transition duration-500 hover:scale-103 hover:shadow-lg rounded-xl p-4 gap-4">
-            <input type="checkbox" class="absolute top-2 left-2 w-5 h-5 accent-[#70C05B] cursor-pointer">
-            <div class="flex items-center gap-4 flex-1 w-full">
-                <div>
-                    <img src="../images/Korzina.png" alt="Product" class="w-full h-full object-cover rounded-md">
-                </div>
-                <div class="flex flex-col flex-1">
-                    <h2 class="text-[#414141] font-semibold text-lg">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h2>
-                    <div class="flex items-center gap-2 mt-3">
-                        <p class="text-[#414141] text-[12px] font-bold">44,50 ₽</p>
-                        <p class="text-[#606060] text-[12px] font-semibold ml-2"> 50,50 ₽</p>
-                        <span class="text-[#606060] text-[12px] font-semibold ml-2"> за шт.</span>
-                        <span class="w-[50px] h-[30px] rounded-md flex justify-center text-[14px] inline-block mt-2 bg-[#FF6633] font-semibold text-white px-2 py-1">-10%</span>
-                    </div>
-                </div>
-                <div class="flex items-center gap-4">
-                    <div class="flex items-center gap-2 bg-[#70C05B] text-white rounded-md text-lg font-bold p-2">
-                        <button class="w-8 h-8 flex justify-center items-center">-</button>
-                        <span class="text-lg font-semibold">2</span>
-                        <button class="w-8 h-8 flex justify-center items-center text-lg font-bold">+</button>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start gap-8 text-left">
+
+            <div>
+                <div class="flex justify-start gap-2">
+                    <div class="flex flex-shrink-0 items-start">
+                        <img src="../images/about-check.png" alt="check" class="w-8 h-8">
                     </div>
                     <div>
-                        <p class="text-lg font-bold text-[#414141] text-[18px]">80,10 ₽</p>
-                        <p class="text-[#8F8F8F] text-[16px]"><del>89,00 ₽</del></p>
+                        <span class="text-[14px] lg:text-[20px] text-[#414141]">Мы занимаемся розничной торговлей</span>
+                        <p class="text-[14px] md:text-[18px] lg:text-[24px] text-[#414141] font-bold">Более 20 лет.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="flex justify-start gap-2">
+                    <div class="flex flex-shrink-0 items-start">
+                        <img src="../images/about-check.png" alt="check" class="w-8 h-8">
+                    </div>
+                    <div>
+                        <span class="text-[14px] lg:text-[20px] text-[#414141]">Основная миссия компании</span>
+                        <p class="text-[14px] md:text-[18px] lg:text-[24px] text-[#414141] font-bold">Максимальное качество товаров и услуг по доступной цене.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="flex justify-start gap-2">
+                    <div class="flex flex-shrink-0 items-start">
+                        <img src="../images/about-check.png" alt="check" class="w-8 h-8 object-contain">
+                    </div>
+                    <div>
+                        <span class="text-[14px] lg:text-[20px] text-[#414141]">Отличительная черта нашей сети</span>
+                        <p class="text-[14px] md:text-[18px] lg:text-[24px] text-[#414141] font-bold">Здоровая и полезная продукция местного производства внаших магазинах.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="relative flex flex-col justify-between items-start bg-white shadow-md transition duration-500 hover:scale-103 hover:shadow-lg rounded-xl p-4 gap-4">
-        <input type="checkbox" class="absolute top-2 left-2 w-5 h-5 accent-[#70C05B] cursor-pointer">
-            <div class="flex items-center gap-4 flex-1 w-full">
-                <div>
-                    <img src="../images/Korzina.png" alt="Product" class="w-full h-full object-cover rounded-md">
-                </div>
-                <div class="flex flex-col flex-1">
-                    <h2 class="text-[#414141] font-semibold text-lg">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h2>
-                    <p class="text-[#414141] text-[12px] font-bold mt-3">44,50 ₽ <span class="text-[#606060] text-[12px] font-semibold ml-4"> за шт.</span></p>
-                </div>
-                <div class="flex items-center gap-4">
-                    <div class="flex items-center gap-2 bg-[#70C05B] text-white rounded-md text-lg font-bold p-2">
-                        <button class="w-8 h-8 flex justify-center items-center">-</button>
-                        <span class="text-lg font-semibold">2</span>
-                        <button class="w-8 h-8 flex justify-center items-center text-lg font-bold">+</button>
-                    </div>
-                    <p class="text-lg font-bold text-[#414141] text-[18px]">89,00 ₽</p>
-                </div>
+
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
+            <div class="flex-shrink-0">
+                <img src="../images/about-logo.png" alt="logo" class="w-20 h-20 object-contain">
+            </div>
+
+            <div class="relative bg-[#E5FFDE] text-[#70C05B] p-6 px-6 rounded-2xl flex items-center justify-center max-w-full md:max-w-3xl">
+                <p class="text-sm sm:text-base font-bold text-center break-words">Спасибо, что выбрали нас! Мы всегда рады видеть вас снова</p>
+                <div class="absolute left-[-12px] top-1/2 -translate-y-1/2 w-0 h-0 border-t-[10px] border-b-[10px] border-r-[12px] border-t-transparent border-b-transparent border-r-[#E5FFDE]"></div>
             </div>
         </div>
     </section>
 
     <footer class="bg-[url('/images/footer-bg.png')] bg-repeat py-6 px-10 bg-[#F9F4E2]">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-            <div class="flex items-center justify-center md:justify-start order-1 md:order-1">
+            <a href="../index.html" class="flex items-center justify-center md:justify-start order-1 md:order-1">
                 <img src="../images/footer-logo.png" alt="Footer logo" class="w-16 h-auto">
-            </div>
+            </a>
             <nav class="flex flex-col md:flex-row flex-wrap justify-center gap-6 text-sm md:text-md font-medium text-[#414141] order-3 md:order-2 mt-4 md:mt-0">
                 <div class="flex flex-wrap justify-center gap-3">
                     <a href="./about.html" class="transition hover:text-[#FF6633] duration-500">О компании</a>
