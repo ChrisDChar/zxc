@@ -335,12 +335,8 @@ products
 
 prevBought.innerHTML = prevBoughtHTML;
 
-window.addEventListener("load", () => {
-  let loader = document.getElementById("loadingScreen");
-  if (loader) {
-    loader.classList.add("opacity-0");
-    loader.style.transition = "opacity 0.5s ease";
-    setTimeout(() => (loader.style.display = "none"), 500);
-  }
+let loader = document.getElementById("loadingScreen");
+window.addEventListener("load", function() {
+  loader.classList.add("hidden")
 });
 
