@@ -2,7 +2,7 @@ let searchInput = document.getElementById("input");
 let searchCards = document.getElementById("searchCards");
 
 searchInput.addEventListener("input", function(e){
-    let searchValue = e.target.value.toLowerCase().trim();
+    let searchValue = e.target.value
     let searchProducts = products.filter((el) =>
          el.name.toLowerCase().includes(searchValue.toLowerCase()))
 

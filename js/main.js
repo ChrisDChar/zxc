@@ -11,9 +11,9 @@ products
           <img src="../images/fav.png" alt="Favourite" class="w-6 h-6 transition">
         </button>
 
-        <div class="relative mb-4">
-          <img src="${el.images[0]}" alt="${el.name}" class="w-full h-28 sm:h-40 object-cover rounded-lg my-4">
-          <span class="w-[40px] sm:w-[56px] h-[26px] sm:h-[32px] absolute bottom-1 left-1 bg-[#FF6633] text-white text-[12px] sm:text-[17px] font-semibold px-3 py-1 rounded">${el.discount}%</span>
+        <div class="relative mb-2">
+          <img src="${el.images[0]}" alt="${el.name}" class="w-full h-38 sm:h-52 object-cover rounded-lg">
+          <span class="w-[40px] sm:w-[56px] h-[26px] sm:h-[32px] absolute bottom-6 left-2 bg-[#FF6633] text-white text-[12px] sm:text-[17px] font-semibold px-3 py-1 rounded">${el.discount}%</span>
         </div>
 
         <div class="mb-2">
@@ -126,7 +126,7 @@ products
         </button>
 
         <div class="relative mb-4">
-          <img src="${el.images[0]}" alt="${el.name}" class="w-full h-28 sm:h-40 object-cover rounded-lg my-4">
+          <img src="${el.images[0]}" alt="${el.name}" class="w-full h-38 sm:h-52 object-cover rounded-lg">
         </div>
 
         <div class="mb-4">
@@ -237,7 +237,7 @@ products
         </button>
 
         <div class="relative mb-4">
-          <img src="${el.images[0]}" alt="${el.name}" class="w-full h-28 sm:h-40 object-cover rounded-lg my-4">
+          <img src="${el.images[0]}" alt="${el.name}" class="w-full h-38 sm:h-52 object-cover rounded-lg">
         </div>
 
         <div class="mb-4">
