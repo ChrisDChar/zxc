@@ -1,4 +1,8 @@
 let discountCards = document.querySelector(".discountCards");
+let carts = JSON.parse(localStorage.getItem("carts") || "[]");
+localStorage.setItem("carts", JSON.stringify(carts));
+let cartBadge = document.getElementById("cartBadge");
+cartBadge.textContent = carts.length;
 
 let cardsHTML = "";
 products
@@ -106,12 +110,43 @@ products
   }
         </div>
 
-        <button class="mt-auto w-full bg-[#FFFFFF] rounded border border-[#70C05B] text-[#70C05B] group-hover:bg-[#FF6633] group-hover:border-none group-hover:text-[#FFFFFF] transition duration-300 py-1">В корзину</button>
+        ${
+          carts.find(cart => cart.id === el.id)
+          ? `
+          <div class="quantity-controls grid grid-cols-3 mt-auto bg-white rounded border border-[#70C05B]">
+          <button onclick="changeQuantity(${el.id}, 'decrease')" class="text-white bg-red-500 font-bold text-xl py-1">-</button>
+          <span id="quantity-${el.id}" class="text-center font-bold text-[#414141] py-1">
+          ${carts.find(cart => cart.id === el.id)?.quantity || 1}
+          </span>
+          <button onclick="changeQuantity(${el.id}, 'increase')" class="text-white bg-green-500 font-bold text-xl py-1">+</button>
+          </div>`
+          : `<button
+          onclick="addToCart(${el.id})"
+          class="mt-auto w-full bg-white rounded border border-[#70C05B] text-[#70C05B] hover:bg-[#FF6633] hover:text-white transition duration-300 py-1">
+          В корзину
+          </button>`
+}
+        
+
       </div>
     `;
   });
 
+  function addToCart(id) {
+    let item = products.find((el) => el.id === id);
+    carts.push(item)
+    console.log(carts);
+    cartBadge.textContent = carts.length
+    localStorage.setItem("carts", JSON.stringify(carts));
+  }
+
 discountCards.innerHTML = cardsHTML;
+
+
+
+
+
+
 
 let newItems = document.querySelector(".newItems");
 
@@ -223,6 +258,10 @@ products
   });
 
 newItems.innerHTML = newItemsHTML;
+
+
+
+
 
 let prevBought = document.querySelector(".prevBought");
 
