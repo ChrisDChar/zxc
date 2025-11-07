@@ -41,9 +41,14 @@
 
             <div class="hidden sm:flex items-center space-x-6">
 
-                <div class="flex flex-col items-center cursor-pointer">
-                    <img src="./images/fav.png" alt="Favourite" class="w-6 h-6 mb-1 cursor-pointer">
-                    <span class="text-xs text-gray-700 font-medium">Избранное</span>
+                <div class="relative flex flex-col items-center justify-center cursor-pointer">
+                    <a href="./html/favourite.html" class="flex flex-col items-center justify-center"></a>
+                        <div class="relative">
+                            <img src="./images/header-fav.png" alt="Cart" class="w-6 h-6 mb-1 block cursor-pointer">
+                            <span id="favBadge" class="absolute -top-2 -right-3 bg-[#FF6633] text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full">0</span>
+                        </div>
+                        <span class="text-xs text-gray-700 font-medium">Избранное</span>
+                    </a>
                 </div>
 
                 <a href="./html/all-products.html" class="flex flex-col items-center cursor-pointer">
@@ -62,12 +67,23 @@
                 </div>
             </div>
 
-            <div class="hidden sm:flex items-center space-x-2 cursor-pointer">
-                <img src="./images/user.png" alt="User" class="w-10 h-10">
-                <span class="font-medium ">Алексей</span>
+            <div id="Profile" class="hidden sm:flex items-center space-x-2 cursor-pointer">
+                <img id="profile-image" src="./images/user.png" alt="User" class="w-10 h-10 rounded-[50%]">
+                <span id="profile-name" class="font-medium ">Алексей</span>
             </div>
         </div>
     </header>
+
+    <div id="form-modal" class="fixed hidden z-110 top-0 w-full h-full bg-[#FCD5BACC]/80 flex items-center justify-center">
+        <div id="inner-modal" class="bg-white max-w-[450px] w-full p-[20px] rounded-[10px]">
+            <form id="modal-form" class="flex flex-col w-full gap-[20px]">
+                <input required class="modal-input border-[2px] border-[orangered] rounded-[5px] p-[10px]" type="text" placeholder="PhotoURL">
+                <input required class="modal-input border-[2px] border-[orangered] rounded-[5px] p-[10px]" type="text" placeholder="Name">
+                <input required class="modal-input border-[2px] border-[orangered] rounded-[5px] p-[10px]" type="text" placeholder="Number">
+                <button type="submit" class="bg-[orangered] text-white rounded-[5px] p-[10px] cursor-pointer">Send Info</button>
+            </form>
+        </div>
+    </div>
     
     <nav class="sm:hidden fixed bottom-0 left-0 w-full bg-white z-50 flex justify-around py-2">
         <div class="flex flex-col items-center justify-center cursor-pointer">
@@ -77,12 +93,15 @@
             </a>
         </div>
 
-        <div class="flex flex-col items-center cursor-pointer">
-            <a href="">
-                <img src="./images/fav.png" alt="Избранное" class="w-6 h-6 mb-1 mx-auto">
-                <span class="text-xs text-[#414141] font-medium">Избранное</span>
-            </a>
-        </div>
+        <div class="relative flex flex-col items-center justify-center cursor-pointer">
+            <a href="./html/favourite.html" class="flex flex-col items-center justify-center"></a>
+                <div class="relative">
+                    <img src="./images/header-fav.png" alt="Cart" class="w-6 h-6 mb-1 block cursor-pointer">
+                            <span id="favBadge" class="absolute -top-2 -right-3 bg-[#FF6633] text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full">0</span>
+                        </div>
+                        <span class="text-xs text-gray-700 font-medium">Избранное</span>
+                    </a>
+                </div>
 
         <div class="flex flex-col items-center cursor-pointer">
             <a href="./html/all-products.html">
@@ -256,5 +275,6 @@
     <script src="./products-data/products-data.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/search.js"></script>
+    <script src="./js/cart.js"></script>
 </body>
 </html>

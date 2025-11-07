@@ -53,7 +53,7 @@
                     <a href="../html/cart.html" class="flex flex-col items-center justify-center">
                         <div class="relative">
                             <img src="../images/cart.png" alt="Cart" class="w-6 h-6 mb-1 block cursor-pointer">
-                            <span id="cart-count" class="absolute -top-2 -right-3 bg-[#FF6633] text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full">0</span>
+                            <span id="cartBadge" class="absolute -top-2 -right-3 bg-[#FF6633] text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full">0</span>
                         </div>
                         <span class="text-xs text-gray-700 font-medium">Корзина</span>
                     </a>
@@ -89,10 +89,13 @@
             </a>
         </div>
 
-        <div class="flex flex-col items-center cursor-pointer">
-            <a href="../html/cart.html">
-                <img src="../images/cart.png" alt="Корзина" class="w-6 h-6 mb-1 mx-auto">
-                <span class="text-xs text-[#414141] font-medium">Корзина</span>
+        <div class="relative flex flex-col items-center justify-center cursor-pointer">
+            <a href="../html/cart.html" class="flex flex-col items-center justify-center">
+                <div class="relative">
+                    <img src="../images/cart.png" alt="Cart" class="w-6 h-6 mb-1 block cursor-pointer">
+                    <span id="cartBadge" class="absolute -top-2 -right-3 bg-[#FF6633] text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full">0</span>
+                </div>
+                <span class="text-xs text-gray-700 font-medium">Корзина</span>
             </a>
         </div>
 
@@ -105,80 +108,23 @@
         <div class="flex items-center text-gray-700 text-md">
             <a href="../index.html" class="hover:text-gray-900 transition duration-500">Главная</a>
             <span class="mx-4 text-gray-700 text-lg"> › </span>
-            <span class="text-gray-700">О компании</span>
-        </div>
-    </div>
-
-    <section class="max-w-7xl mx-auto py-10 px-4 md:px-6 lg:px-8">
-        <div class="grid lg:grid-cols-2 mb-20 items-center">
-            <div>
-                <h1 class="text-[36px] md:text-[48px] lg:text-[64px] font-bold text-[#414141] mb-4">О компании</h1>
-                <p class="text-[14px] md:text-[18px] lg:text-[24px] font-bold text-[#FF6633]">Мы непрерывно развиваемся и <br> работаем над совершенствованием сервиса, <br> заботимся о наших клиентах, <br> стремимся к лучшему будущему.</p>
-            </div>
-
-            <div class="flex justify-center">
-                <div class="bg-[#E5FFDE] rounded-[60px] w-full max-w-3xl flex items-center justify-center ">
-                    <img src="../images/about-main.png" alt="about-main" class="w-full h-full object-contain rounded-[40px]">
-                </div>
-            </div>
+            <span class="text-gray-700">Single</span>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start gap-8 text-left">
+        <div id="product-header"></div>
 
-            <div>
-                <div class="flex justify-start gap-2">
-                    <div class="flex flex-shrink-0 items-start">
-                        <img src="../images/about-check.png" alt="check" class="w-8 h-8">
-                    </div>
-                    <div>
-                        <span class="text-[14px] lg:text-[20px] text-[#414141]">Мы занимаемся розничной торговлей</span>
-                        <p class="text-[14px] md:text-[18px] lg:text-[24px] text-[#414141] font-bold">Более 20 лет.</p>
-                    </div>
-                </div>
+        <main class="my-10">
+            <div id="single-container" class="max-w-7xl mx-auto px-2">
             </div>
+        </main>
 
-            <div>
-                <div class="flex justify-start gap-2">
-                    <div class="flex flex-shrink-0 items-start">
-                        <img src="../images/about-check.png" alt="check" class="w-8 h-8">
-                    </div>
-                    <div>
-                        <span class="text-[14px] lg:text-[20px] text-[#414141]">Основная миссия компании</span>
-                        <p class="text-[14px] md:text-[18px] lg:text-[24px] text-[#414141] font-bold">Максимальное качество товаров и услуг по доступной цене.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div class="flex justify-start gap-2">
-                    <div class="flex flex-shrink-0 items-start">
-                        <img src="../images/about-check.png" alt="check" class="w-8 h-8 object-contain">
-                    </div>
-                    <div>
-                        <span class="text-[14px] lg:text-[20px] text-[#414141]">Отличительная черта нашей сети</span>
-                        <p class="text-[14px] md:text-[18px] lg:text-[24px] text-[#414141] font-bold">Здоровая и полезная продукция местного производства внаших магазинах.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 mt-20">
-            <div class="flex-shrink-0">
-                <img src="../images/about-logo.png" alt="logo" class="w-20 h-20 object-contain">
-            </div>
-
-            <div class="relative bg-[#E5FFDE] text-[#70C05B] p-6 px-6 rounded-2xl flex items-center justify-center max-w-full md:max-w-3xl">
-                <p class="text-sm sm:text-base font-bold text-center break-words">Спасибо, что выбрали нас! Мы всегда рады видеть вас снова</p>
-                <div class="absolute left-[-12px] top-1/2 -translate-y-1/2 w-0 h-0 border-t-[10px] border-b-[10px] border-r-[12px] border-t-transparent border-b-transparent border-r-[#E5FFDE]"></div>
-            </div>
-        </div>
-    </section>
+    
 
     <footer class="bg-[url('/images/footer-bg.png')] bg-repeat py-6 px-10 bg-[#F9F4E2]">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-            <a href="../index.html" class="flex items-center justify-center md:justify-start order-1 md:order-1">
+            <div class="flex items-center justify-center md:justify-start order-1 md:order-1">
                 <img src="../images/footer-logo.png" alt="Footer logo" class="w-16 h-auto">
-            </a>
+            </div>
             <nav class="flex flex-col md:flex-row flex-wrap justify-center gap-6 text-sm md:text-md font-medium text-[#414141] order-3 md:order-2 mt-4 md:mt-0">
                 <div class="flex flex-wrap justify-center gap-3">
                     <a href="./about.html" class="transition hover:text-[#FF6633] duration-500">О компании</a>
@@ -204,7 +150,9 @@
     </footer>
 
     <script src="../products-data/products-data.js"></script>
+    <script src="../js/single.js"></script>
     <script src="../js/main.js"></script>
     <script src="../js/search.js"></script>
+    <script src="../js/cart.js"></script>
 </body>
 </html>

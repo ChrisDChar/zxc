@@ -34,9 +34,14 @@
 
             <div class="hidden sm:flex items-center space-x-6">
 
-                <div class="flex flex-col items-center cursor-pointer">
-                    <img src="../images/fav.png" alt="Favourite" class="w-6 h-6 mb-1 cursor-pointer">
-                    <span class="text-xs text-gray-700 font-medium">Избранное</span>
+                <div class="relative flex flex-col items-center justify-center cursor-pointer">
+                    <a href="../html/favourite.html" class="flex flex-col items-center justify-center"></a>
+                        <div class="relative">
+                            <img src="../images/header-fav.png" alt="Cart" class="w-6 h-6 mb-1 block cursor-pointer">
+                            <span id="favBadge" class="absolute -top-2 -right-3 bg-[#FF6633] text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full">0</span>
+                        </div>
+                        <span class="text-xs text-gray-700 font-medium">Избранное</span>
+                    </a>
                 </div>
 
                 <a href="../html/all-products.html" class="flex flex-col items-center cursor-pointer">
@@ -48,7 +53,7 @@
                     <a href="../html/cart.html" class="flex flex-col items-center justify-center">
                         <div class="relative">
                             <img src="../images/cart.png" alt="Cart" class="w-6 h-6 mb-1 block cursor-pointer">
-                            <span id="cart-count" class="absolute -top-2 -right-3 bg-[#FF6633] text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full">0</span>
+                            <span id="cartBadge" class="absolute -top-2 -right-3 bg-[#FF6633] text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full">0</span>
                         </div>
                         <span class="text-xs text-gray-700 font-medium">Корзина</span>
                     </a>
@@ -214,5 +219,6 @@
     <script src="../products-data/products-data.js"></script>
     <script src="../js/main.js"></script>
     <script src="../js/search.js"></script>
+    <script src="../js/cart.js"></script>
 </body>
 </html>
