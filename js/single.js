@@ -4,8 +4,7 @@ let item = products.filter((el) => el.id == id);
 let singlecontainer = document.getElementById("single-container");
 let productHeader = document.getElementById("product-header");
 
-// Check if item exists
-if (item.length > 0) {
+
     let el = item[0];
     let discountedPrice = (el.price - (el.price * el.discount / 100)).toFixed(2);
 
@@ -42,7 +41,7 @@ if (item.length > 0) {
         <div id="single-right" class="flex flex-col gap-6 w-full md:w-1/2 px-5 items-start">
             <div class="flex justify-between items-center w-full gap-5">
                 ${el.discount > 0 ? 
-                    `<p class="text-xl text-gray-500 line-through">${el.price}₽</p>` 
+                    `<p class="text-xl text-gray-500">${el.price}₽</p>` 
                     : ''}
                 <p class="text-3xl font-bold text-[#414141]">${discountedPrice}₽</p>
             </div>
@@ -78,14 +77,3 @@ if (item.length > 0) {
             }
         });
     }
-
-
-} else {
-    productHeader.innerHTML = '';
-    singlecontainer.innerHTML = `
-        <div class="text-center py-10">
-            <h2 class="text-2xl font-bold text-[#414141]">Товар не найден</h2>
-            <a href="../html/catalog.html" class="text-[#70C05B] hover:underline mt-4 inline-block">Вернуться в каталог</a>
-        </div>
-    `;
-}
