@@ -31,13 +31,11 @@
                 <div id="searchCards" class="absolute top-full left-0 w-full hidden max-h-64 overflow-y-auto bg-white shadow-lg rounded-md border border-[#70C05B] mt-1 z-50 flex flex-col gap-2 p-3"></div>
             </div>
 
-
             <div class="hidden sm:flex items-center space-x-6">
-
                 <div class="relative flex flex-col items-center justify-center cursor-pointer">
-                    <a href="../html/favourite.html" class="flex flex-col items-center justify-center"></a>
+                    <a href="../html/favourite.html" class="flex flex-col items-center justify-center">
                         <div class="relative">
-                            <img src="../images/header-fav.png" alt="Cart" class="w-6 h-6 mb-1 block cursor-pointer">
+                            <img src="../images/header-fav.png" alt="Favourites" class="w-6 h-6 mb-1 block cursor-pointer">
                             <span id="favBadge" class="absolute -top-2 -right-3 bg-[#FF6633] text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full">0</span>
                         </div>
                         <span class="text-xs text-gray-700 font-medium">Избранное</span>
@@ -53,7 +51,7 @@
                     <a href="../html/cart.html" class="flex flex-col items-center justify-center">
                         <div class="relative">
                             <img src="../images/cart.png" alt="Cart" class="w-6 h-6 mb-1 block cursor-pointer">
-                            <span id="cart-count" class="absolute -top-2 -right-3 bg-[#FF6633] text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full">0</span>
+                            <span id="cartBadge" class="absolute -top-2 -right-3 bg-[#FF6633] text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full">0</span>
                         </div>
                         <span class="text-xs text-gray-700 font-medium">Корзина</span>
                     </a>
@@ -67,39 +65,51 @@
         </div>
     </header>
 
-    <nav class="sm:hidden fixed bottom-0 left-0 w-full bg-white z-50 flex justify-around py-2">
-        <div class="flex flex-col items-center justify-center cursor-pointer">
-            <a href="../html/catalog.html">
-                <img src="../images/catalog.png" alt="Каталог" class="w-6 h-6 mb-1 mx-auto">
-                <span class="text-xs text-[#414141] font-medium">Каталог</span>
-            </a>
-        </div>
+    <nav class="sm:hidden fixed bottom-0 left-0 w-full bg-white z-50 flex justify-around py-3">
+    <!-- Catalog -->
+    <div class="flex flex-col items-center justify-center cursor-pointer">
+        <a href="catalog.html" class="flex flex-col items-center justify-center">
+            <img src="../images/catalog.png" alt="Каталог" class="w-6 h-6 mb-1 mx-auto">
+            <span class="text-xs text-[#414141] font-medium">Каталог</span>
+        </a>
+    </div>
 
-        <div class="flex flex-col items-center cursor-pointer">
-            <a href="">
-                <img src="../images/fav.png" alt="Избранное" class="w-6 h-6 mb-1 mx-auto">
-                <span class="text-xs text-[#414141] font-medium">Избранное</span>
-            </a>
-        </div>
+    <!-- Favourites -->
+    <div class="relative flex flex-col items-center justify-center cursor-pointer">
+        <a href="favourite.html" class="flex flex-col items-center justify-center">
+            <div class="relative">
+                <img src="../images/header-fav.png" alt="Избранное" class="w-6 h-6 mb-1 mx-auto">
+                <span id="mobileFavBadge" class="absolute -top-2 -right-3 bg-[#FF6633] text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full">0</span>
+            </div>
+            <span class="text-xs text-[#414141] font-medium">Избранное</span>
+        </a>
+    </div>
 
-        <div class="flex flex-col items-center cursor-pointer">
-            <a href="../html/all-products.html">
-                <img src="../images/products.png" alt="Заказы" class="w-6 h-6 mb-1 mx-auto">
-                <span class="text-xs text-[#414141] font-medium">Заказы</span>
-            </a>
-        </div>
+    <!-- Orders -->
+    <div class="flex flex-col items-center cursor-pointer">
+        <a href="all-products.html" class="flex flex-col items-center justify-center">
+            <img src="../images/products.png" alt="Заказы" class="w-6 h-6 mb-1 mx-auto">
+            <span class="text-xs text-[#414141] font-medium">Заказы</span>
+        </a>
+    </div>
 
-        <div class="flex flex-col items-center cursor-pointer">
-            <a href="../html/cart.html">
+    <!-- Cart -->
+    <div class="relative flex flex-col items-center justify-center cursor-pointer">
+        <a href="cart.html" class="flex flex-col items-center justify-center">
+            <div class="relative">
                 <img src="../images/cart.png" alt="Корзина" class="w-6 h-6 mb-1 mx-auto">
-                <span class="text-xs text-[#414141] font-medium">Корзина</span>
-            </a>
-        </div>
+                <span id="mobileCartBadge" class="absolute -top-2 -right-3 bg-[#FF6633] text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full">0</span>
+            </div>
+            <span class="text-xs text-[#414141] font-medium">Корзина</span>
+        </a>
+    </div>
 
-        <div>
-            <img src="../images/user.png" alt="Профиль">
-        </div>
-    </nav>
+    <div class="flex flex-col items-center cursor-pointer">
+        <a href="#" class="flex flex-col items-center justify-center">
+            <img id="mobileProfileImage" src="../images/user.png" alt="Профиль" class="w-10 h-10 mb-1 mx-auto rounded-full">
+        </a>
+    </div>
+</nav>
 
     <div class="max-w-7xl mx-auto mt-25 px-4">
         <div class="flex items-center text-gray-700 text-md">
@@ -208,5 +218,6 @@
     <script src="../js/single.js"></script>
     <script src="../js/search.js"></script>
     <script src="../js/cart.js"></script>
+    <script src="../js/badge.js"></script>
 </body>
 </html>

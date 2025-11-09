@@ -31,11 +31,13 @@
                 <div id="searchCards" class="absolute top-full left-0 w-full hidden max-h-64 overflow-y-auto bg-white shadow-lg rounded-md border border-[#70C05B] mt-1 z-50 flex flex-col gap-2 p-3"></div>
             </div>
 
+
             <div class="hidden sm:flex items-center space-x-6">
+
                 <div class="relative flex flex-col items-center justify-center cursor-pointer">
-                    <a href="../html/favourite.html" class="flex flex-col items-center justify-center">
+                    <a href="./favourite.html" class="flex flex-col items-center justify-center">
                         <div class="relative">
-                            <img src="../images/header-fav.png" alt="Favourites" class="w-6 h-6 mb-1 block cursor-pointer">
+                            <img src="../images/header-fav.png" alt="Cart" class="w-6 h-6 mb-1 block cursor-pointer">
                             <span id="favBadge" class="absolute -top-2 -right-3 bg-[#FF6633] text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full">0</span>
                         </div>
                         <span class="text-xs text-gray-700 font-medium">Избранное</span>
@@ -65,26 +67,23 @@
         </div>
     </header>
 
-    <nav class="sm:hidden fixed bottom-0 left-0 w-full bg-white z-50 flex justify-around py-3">
+    <nav class="sm:hidden fixed bottom-0 left-0 w-full bg-white z-50 flex justify-around py-2">
         <div class="flex flex-col items-center justify-center cursor-pointer">
-            <a href="../html/catalog.html" class="flex flex-col items-center justify-center">
+            <a href="../html/catalog.html">
                 <img src="../images/catalog.png" alt="Каталог" class="w-6 h-6 mb-1 mx-auto">
                 <span class="text-xs text-[#414141] font-medium">Каталог</span>
             </a>
         </div>
 
-        <div class="relative flex flex-col items-center justify-center cursor-pointer">
-            <a href="../html/favourite.html" class="flex flex-col items-center justify-center">
-                <div class="relative">
-                    <img src="../images/header-fav.png" alt="Избранное" class="w-6 h-6 mb-1 mx-auto">
-                    <span id="mobileFavBadge" class="absolute -top-2 -right-3 bg-[#FF6633] text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full">0</span>
-                </div>
+        <div class="flex flex-col items-center cursor-pointer">
+            <a href="">
+                <img src="../images/header-fav.png" alt="Избранное" class="w-6 h-6 mb-1 mx-auto">
                 <span class="text-xs text-[#414141] font-medium">Избранное</span>
             </a>
         </div>
 
         <div class="flex flex-col items-center cursor-pointer">
-            <a href="../html/all-products.html" class="flex flex-col items-center justify-center">
+            <a href="../html/all-products.html">
                 <img src="../images/products.png" alt="Заказы" class="w-6 h-6 mb-1 mx-auto">
                 <span class="text-xs text-[#414141] font-medium">Заказы</span>
             </a>
@@ -93,38 +92,75 @@
         <div class="relative flex flex-col items-center justify-center cursor-pointer">
             <a href="../html/cart.html" class="flex flex-col items-center justify-center">
                 <div class="relative">
-                    <img src="../images/cart.png" alt="Корзина" class="w-6 h-6 mb-1 mx-auto">
-                    <span id="mobileCartBadge" class="absolute -top-2 -right-3 bg-[#FF6633] text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full">0</span>
+                    <img src="../images/cart.png" alt="Cart" class="w-6 h-6 mb-1 block cursor-pointer">
+                    <span id="cartBadge" class="absolute -top-2 -right-3 bg-[#FF6633] text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full">0</span>
                 </div>
-                <span class="text-xs text-[#414141] font-medium">Корзина</span>
+                <span class="text-xs text-gray-700 font-medium">Корзина</span>
             </a>
         </div>
 
-        <div class="flex flex-col items-center cursor-pointer">
-            <a href="#" class="flex flex-col items-center justify-center">
-                <img src="../images/user.png" alt="Профиль" class="w-6 h-6 mb-1 mx-auto">
-                <span class="text-xs text-[#414141] font-medium">Профиль</span>
-            </a>
+        <div>
+            <img src="../images/user.png" alt="Профиль">
         </div>
     </nav>
 
-    <div class="max-w-7xl mx-auto mt-25 px-4">
-        <div class="flex items-center text-gray-700 text-md">
-            <a href="../index.html" class="hover:text-gray-900 transition duration-500">Главная</a>
-            <span class="mx-4 text-gray-700 text-lg"> › </span>
-            <span class="text-gray-700">Single</span>
-        </div>
-
-        <div id="product-header"></div>
-
-        <main class="my-10">
-            <div id="single-container" class="max-w-7xl mx-auto px-2">
+    <div class="relative flex flex-col items-center justify-center cursor-pointer">
+        <a href="./favourite.html" class="flex flex-col items-center justify-center">
+            <div class="relative">
+                <img src="../images/header-fav.png" alt="Cart" class="w-6 h-6 mb-1 block cursor-pointer">
+                <span id="favBadge" class="absolute -top-2 -right-3 bg-[#FF6633] text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full">0</span>
             </div>
-        </main>
+            <span class="text-xs text-gray-700 font-medium">Избранное</span>
+        </a>
+    </div>
 
-    
+    <div class="max-w-7xl mx-auto px-4 mb-6">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <label class="flex items-center gap-2 cursor-pointer">
+                    <input type="checkbox" class="w-5 h-5 accent-[#70C05B] mr-1">
+                    <span class="text-[#606060] text-[14px] font-medium">Выделить всё</span>
+                </label>
+                <button class="text-[#FF6633] text-[14px] font-medium sm:ml-15 cursor-pointer">Удалить выбранные</button>
+            </div>
+        </div>
+    </div>
 
-    <footer class="bg-[url('/images/footer-bg.png')] bg-repeat py-6 px-10 bg-[#F9F4E2]">
+
+    <section class="max-w-7xl mx-auto mt-10 px-4 py-10">
+        <h1 class="text-4xl font-extrabold text-[#414141] mb-8">Избранное</h1>
+
+        <div class="flex flex-col md:flex-row gap-8">
+            <aside class="w-full md:w-1/4 bg-[#FBF8EC] rounded-2xl p-6 h-fit">
+                <h2 class="text-lg font-semibold bg-[#F3F2F1] rounded-md text-[#414141] mb-4 p-2">Фильтр</h2>
+                
+                <div class="flex justify-between items-center mb-3">
+                    <label class="text-md font-medium text-[#606060]">Цена</label>
+                    <button class="text-xs text-[#606060] bg-[#F3F2F1] px-2 py-1 rounded-md font-medium cursor-pointer hover:bg-gray-200 transition">Очистить</button>
+                </div>
+                
+                <div class="flex items-center justify-between gap-2">
+                    <input type="number" placeholder="1" class="w-24 border border-[#414141] text-[#414141] bg-white rounded-md p-2 text-sm text-center">
+                    <span class="text-[#606060]">-</span>
+                    <input type="number" placeholder="100" class="w-24 border border-[#414141] text-[#414141] bg-white rounded-md p-2 text-sm text-center">
+                </div>
+            </aside>
+
+            <div class="w-full md:w-3/4">
+                <div id="favProducts" class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                </div>
+
+                <div class="flex justify-center items-center mt-10">
+                    <button id="loadMore" class="bg-gray-100 hover:bg-gray-200 px-6 py-2 rounded-md font-medium text-[#414141] transition cursor-pointer">Показать ещё</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer class="bg-[url('../images/footer-bg.png')] bg-repeat py-6 px-10 bg-[#F9F4E2]">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
             <div class="flex items-center justify-center md:justify-start order-1 md:order-1">
                 <img src="../images/footer-logo.png" alt="Footer logo" class="w-16 h-auto">
@@ -154,9 +190,9 @@
     </footer>
 
     <script src="../products-data/products-data.js"></script>
-    <script src="../js/single.js"></script>
+    <script src="../js/favourite.js"></script>
+    <script src="../js/cart.js"></script>
     <script src="../js/main.js"></script>
     <script src="../js/search.js"></script>
-    <script src="../js/cart.js"></script>
 </body>
 </html>

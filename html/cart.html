@@ -35,7 +35,7 @@
             <div class="hidden sm:flex items-center space-x-6">
 
                 <div class="relative flex flex-col items-center justify-center cursor-pointer">
-                    <a href="../html/favourite.html" class="flex flex-col items-center justify-center"></a>
+                    <a href="../html/favourite.html" class="flex flex-col items-center justify-center">
                         <div class="relative">
                             <img src="../images/header-fav.png" alt="Cart" class="w-6 h-6 mb-1 block cursor-pointer">
                             <span id="favBadge" class="absolute -top-2 -right-3 bg-[#FF6633] text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full">0</span>
@@ -67,23 +67,26 @@
         </div>
     </header>
 
-    <nav class="sm:hidden fixed bottom-0 left-0 w-full bg-white z-50 flex justify-around py-2">
+    <nav class="sm:hidden fixed bottom-0 left-0 w-full bg-white z-50 flex justify-around py-3">
         <div class="flex flex-col items-center justify-center cursor-pointer">
-            <a href="../html/catalog.html">
+            <a href="../html/catalog.html" class="flex flex-col items-center justify-center">
                 <img src="../images/catalog.png" alt="Каталог" class="w-6 h-6 mb-1 mx-auto">
                 <span class="text-xs text-[#414141] font-medium">Каталог</span>
             </a>
         </div>
 
-        <div class="flex flex-col items-center cursor-pointer">
-            <a href="">
-                <img src="../images/header-fav.png" alt="Избранное" class="w-6 h-6 mb-1 mx-auto">
+        <div class="relative flex flex-col items-center justify-center cursor-pointer">
+            <a href="../html/favourite.html" class="flex flex-col items-center justify-center">
+                <div class="relative">
+                    <img src="../images/header-fav.png" alt="Избранное" class="w-6 h-6 mb-1 mx-auto">
+                    <span id="mobileFavBadge" class="absolute -top-2 -right-3 bg-[#FF6633] text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full">0</span>
+                </div>
                 <span class="text-xs text-[#414141] font-medium">Избранное</span>
             </a>
         </div>
 
         <div class="flex flex-col items-center cursor-pointer">
-            <a href="../html/all-products.html">
+            <a href="../html/all-products.html" class="flex flex-col items-center justify-center">
                 <img src="../images/products.png" alt="Заказы" class="w-6 h-6 mb-1 mx-auto">
                 <span class="text-xs text-[#414141] font-medium">Заказы</span>
             </a>
@@ -92,47 +95,87 @@
         <div class="relative flex flex-col items-center justify-center cursor-pointer">
             <a href="../html/cart.html" class="flex flex-col items-center justify-center">
                 <div class="relative">
-                    <img src="../images/cart.png" alt="Cart" class="w-6 h-6 mb-1 block cursor-pointer">
-                    <span id="cartBadge" class="absolute -top-2 -right-3 bg-[#FF6633] text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full">0</span>
+                    <img src="../images/cart.png" alt="Корзина" class="w-6 h-6 mb-1 mx-auto">
+                    <span id="mobileCartBadge" class="absolute -top-2 -right-3 bg-[#FF6633] text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full">0</span>
                 </div>
-                <span class="text-xs text-gray-700 font-medium">Корзина</span>
+                <span class="text-xs text-[#414141] font-medium">Корзина</span>
             </a>
         </div>
 
-        <div>
-            <img src="../images/user.png" alt="Профиль">
+        <div class="flex flex-col items-center cursor-pointer">
+            <a href="#" class="flex flex-col items-center justify-center">
+                <img id="mobileProfileImage" src="../images/user.png" alt="Профиль" class="w-10 h-10 mb-1 mx-auto rounded-full">
+            </a>
         </div>
     </nav>
 
     <div class="max-w-7xl mx-auto mt-25 px-4">
-        <div class="flex items-center text-gray-700 text-md">
+        <!-- Breadcrumb -->
+        <div class="flex items-center text-gray-700 text-sm md:text-md">
             <a href="../index.html" class="hover:text-gray-900 transition duration-500">Главная</a>
-            <span class="mx-4 text-gray-700 text-lg"> › </span>
+            <span class="mx-2 md:mx-4 text-gray-700"> › </span>
             <span class="text-gray-700">Корзина</span>
         </div>
 
-        <div class="flex items-center gap-4 mt-4 mb-20">
-            <h1 class="text-6xl font-bold text-[#414141]">Корзина</h1>
-            <span id="cart__count" class="bg-[#FF6633] text-white text-md font-semibold rounded-md px-2 py-1">0</span>
+        <!-- Page Title -->
+        <div class="flex items-center gap-3 md:gap-4 mt-4 mb-8 md:mb-20">
+            <h1 class="text-3xl sm:text-4xl md:text-6xl font-bold text-[#414141]">Корзина</h1>
+            <span id="cart__count" class="bg-[#FF6633] text-white text-sm md:text-md font-semibold rounded-md px-2 py-1">0</span>
         </div>
     </div>
 
     <div class="max-w-7xl mx-auto px-4 mb-6">
-        <div class="flex items-center justify-between">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div class="flex items-center gap-3">
                 <label class="flex items-center gap-2 cursor-pointer">
-                    <input type="checkbox" class="w-5 h-5 accent-[#70C05B] mr-1">
-                    <span class="text-[#606060] text-[14px] font-medium">Выделить всё</span>
+                    <input type="checkbox" class="w-4 h-4 sm:w-5 sm:h-5 accent-[#70C05B]">
+                    <span class="text-[#606060] text-xs sm:text-[14px] font-medium">Выделить всё</span>
                 </label>
-                <button class="text-[#FF6633] text-[14px] font-medium sm:ml-15 cursor-pointer">Удалить выбранные</button>
+                <button class="text-[#FF6633] text-xs sm:text-[14px] font-medium cursor-pointer">Удалить выбранные</button>
             </div>
         </div>
-</div>
+    </div>
 
-    <section class="max-w-7xl mx-auto mt-6 px-4 py-10 flex flex-col md:flex-row gap-6">
-        <div class="cartProducts flex-1 space-y-4">
+    <section class="max-w-7xl mx-auto px-4 py-6">
+        <div class="cartProducts space-y-4">
+        </div>
+
+        <div id="emptyCart" class="hidden text-center py-16">
+            <div class="max-w-md mx-auto">
+                <img src="../images/empty-cart.png" alt="Empty cart" class="w-48 h-48 mx-auto mb-6">
+                <h3 class="text-2xl font-bold text-[#414141] mb-4">Корзина пуста</h3>
+                <p class="text-gray-600 mb-6">Добавьте товары из каталога, чтобы они появились здесь</p>
+                <a href="catalog.html" class="inline-block bg-[#70C05B] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#5CA84A] transition">
+                    Перейти в каталог
+                </a>
+            </div>
         </div>
     </section>
+
+    <div class="hidden lg:block max-w-7xl mx-auto px-4 py-6">
+        <div class="bg-white rounded-xl shadow-sm p-6 max-w-md ml-auto">
+            <h3 class="text-xl font-bold text-[#414141] mb-4">Итого</h3>
+            <div class="space-y-3 mb-6">
+                <div class="flex justify-between">
+                    <span class="text-gray-600">Товары (0)</span>
+                    <span class="font-medium">0 ₽</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-gray-600">Доставка</span>
+                    <span class="font-medium text-[#70C05B]">Бесплатно</span>
+                </div>
+                <div class="border-t pt-3">
+                    <div class="flex justify-between text-lg font-bold">
+                        <span>Общая сумма</span>
+                        <span>0 ₽</span>
+                    </div>
+                </div>
+            </div>
+            <button class="w-full bg-[#FF6633] text-white py-3 rounded-lg font-bold text-lg hover:bg-[#E55A2B] transition">
+                Оформить заказ
+            </button>
+        </div>
+    </div>
 
     <footer class="bg-[url('../images/footer-bg.png')] bg-repeat py-6 px-10 bg-[#F9F4E2]">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
