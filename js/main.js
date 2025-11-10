@@ -343,7 +343,6 @@ products
 
         <h3 class="text-sm sm:text-[16px] font-semibold text-[#414141] mt-3">${el.name}</h3>
         
-        <!-- Product description under the name -->
         <p class="text-xs text-[#606060] mt-1 line-clamp-2">${el.description}</p>
 
         <div class="flex items-center my-2 space-x-2">

@@ -119,7 +119,7 @@ if (item.length > 0) {
         <div id="single-left" class="flex gap-[10px]">
             <div id="change-images" class="flex flex-col gap-[5px]">
                 ${el.images.map(img => 
-                    `<img class="w-[90px] h-[90px] object-cover cursor-pointer border-2 border-transparent hover:border-[#70C05B] rounded-lg transition" src="${img}" alt="${el.name}">`
+                    `<img class="w-[90px] h-[90px] object-cover cursor-pointer border-2 border-transparent rounded-lg transition" src="${img}" alt="${el.name}">`
                 ).join('')}
             </div>
             <div class="relative">
