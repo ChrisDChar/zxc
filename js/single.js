@@ -17,7 +17,6 @@ if (item.length > 0) {
         <div class="flex flex-col gap-3 mt-4">
             <h1 class="text-5xl font-bold text-[#414141]">${el.name}</h1>
             <div id="single-rating" class="flex flex-wrap items-center gap-5 text-[#414141]">
-                <!-- Rating Stars -->
                 <div class="flex items-center gap-2">
                     <div class="flex items-center space-x-1">
                         ${
